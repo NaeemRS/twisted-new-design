@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twisted Hygiene & Packaging</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="siteHeader">
+    <div class="header-info-bar">
+      <div class="container">
+        <div class="header-info-grid">
+          <div class="header-info-item">
+            <span class="header-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 10h16v9H4z"></path>
+                <path d="M8 10V6a4 4 0 0 1 8 0v4"></path>
+              </svg>
+            </span>
+            <span class="header-info-text"><strong>Free Delivery</strong> on orders over &#163;100</span>
+          </div>
+
+          <div class="header-info-item header-info-rating">
+            <span class="header-info-rating-label">EXCELLENT</span>
+            <span class="header-info-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="header-info-text">Based on <strong>42 reviews</strong></span>
+          </div>
+
+          <div class="header-info-item header-info-countdown">
+            <span class="header-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"></circle>
+                <path d="M12 7v5l3 2"></path>
+              </svg>
+            </span>
+            <span class="header-info-text">Next dispatch in <strong><span id="hours">00</span> hrs <span id="minutes">00</span> min <span id="seconds">00</span> s</strong></span>
+          </div>
+
+          <div class="header-info-item header-info-help">
+            <span class="header-info-text">We&rsquo;re here to help <a href="tel:+441414283149">0141 428 3149</a></span>
+            <span class="header-info-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main">
+      <div class="container">
+        <div class="header-toolbar">
+          <a href="#" class="logo">
+            <img src="images/logo.png" alt="Twisted Hygiene & Packaging" class="logo-img">
+          </a>
+
+          <form class="header-search" action="#" role="search">
+            <select class="search-categories" aria-label="Search category">
+              <option>All Categories</option>
+              <option>Coffee Cups</option>
+              <option>Smoothie Cups</option>
+              <option>Deli Boxes</option>
+              <option>Hygiene Products</option>
+            </select>
+            <input type="search" class="search-input" placeholder="Search for products...">
+            <button type="submit" class="search-submit" aria-label="Search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                <circle cx="11" cy="11" r="7"></circle>
+                <path d="M20 20l-3.5-3.5"></path>
+              </svg>
+            </button>
+          </form>
+
+          <div class="header-actions">
+            <a href="#" class="header-action" title="Account" aria-label="Account">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M20 21a8 8 0 0 0-16 0"></path>
+                <circle cx="12" cy="8" r="4"></circle>
+              </svg>
+            </a>
+            <a href="#" class="header-action" title="Wishlist" aria-label="Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"></path>
+              </svg>
+              <span class="badge">0</span>
+            </a>
+            <a href="#" class="header-action header-cart" title="Cart" aria-label="Cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="9" cy="20" r="1.5"></circle>
+                <circle cx="18" cy="20" r="1.5"></circle>
+                <path d="M2 3h2l2.2 12.3a2 2 0 0 0 2 1.7h9.6a2 2 0 0 0 2-1.6L22 7H6"></path>
+              </svg>
+              <span class="cart-info"><span class="cart-count">0</span> items | &#163;0.00</span>
+            </a>
+          </div>
+
+          <button class="header-menu-toggle" type="button" id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <div class="header-nav-row" id="headerNavRow">
+          <nav class="nav-menu">
+            <div class="nav-item has-mega">
+              <a href="#" class="nav-link products-trigger" id="productsTrigger">
+                Products
+                <span class="nav-arrow">&#9662;</span>
+              </a>
+            </div>
+            <a href="#">New In</a>
+            <a href="#">Clearance</a>
+            <a href="#">Monthly Offer</a>
+            <a href="#">Customized Packaging</a>
+          </nav>
+
+          <div class="mega-menu" id="megaMenu">
+            <div class="mega-menu-inner">
+              <ul class="mega-col">
+                <li><a href="#">Bagasse Boxes</a></li>
+                <li><a href="#">Cardboard Food Trays</a></li>
+                <li><a href="#">Coffee Cups &amp; Lids</a></li>
+                <li><a href="#">Food Bags</a></li>
+                <li><a href="#">Ice Cream Tubs</a></li>
+                <li><a href="#">Paper Carrier Bags</a></li>
+                <li><a href="#">Platters &amp; Trays</a></li>
+              </ul>
+              <ul class="mega-col">
+                <li><a href="#">Bin Bags</a></li>
+                <li><a href="#">Catering Equipment</a></li>
+                <li><a href="#">Cutlery &amp; Plates</a></li>
+                <li><a href="#">Food Packaging</a></li>
+                <li><a href="#">Kraft Bowls &amp; Lids</a></li>
+                <li><a href="#">Peri Peri Spices</a></li>
+                <li><a href="#">Smoothie Cups</a></li>
+              </ul>
+              <ul class="mega-col">
+                <li><a href="#">Black Bowls &amp; Lids</a></li>
+                <li><a href="#">Centrefeed Rolls</a></li>
+                <li><a href="#">Deli Boxes</a></li>
+                <li><a href="#">Frampton Milk</a></li>
+                <li><a href="#">Lavazza Coffee</a></li>
+                <li><a href="#">Pizza Box</a></li>
+                <li><a href="#">Soup Cups</a></li>
+              </ul>
+              <ul class="mega-col">
+                <li><a href="#">Black Deli Boxes</a></li>
+                <li><a href="#">Christmas Coffee Cups</a></li>
+                <li><a href="#">Desserts Range</a></li>
+                <li><a href="#">Greaseproof Paper</a></li>
+                <li><a href="#">MONIN Range</a></li>
+                <li><a href="#">Plastic Carrier Bags</a></li>
+                <li><a href="#">Straws</a></li>
+              </ul>
+              <ul class="mega-col">
+                <li><a href="#">Cake Boxes</a></li>
+                <li><a href="#">Clear Deli Boxes</a></li>
+                <li><a href="#">Foil Containers</a></li>
+                <li><a href="#">Hygiene</a></li>
+                <li><a href="#">Napkins</a></li>
+                <li><a href="#">Plastic Containers</a></li>
+                <li><a href="#">Thermal Till Rolls</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="header-offset" id="headerOffset" aria-hidden="true"></div>
+
+  <!-- HERO SLIDER -->
+  <section class="hero-slider">
+    <div class="hero-slides">
+      <div class="hero-slide active">
+        <img class="hero-banner-img" src="images/hero-banner2.png" alt="Hygiene Products">
+      </div>
+      <div class="hero-slide">
+        <img class="hero-banner-img" src="images/hero-banner3.png" alt="Hygiene and Packaging">
+      </div>
+      <div class="hero-slide">
+        <img class="hero-banner-img" src="images/hero-banner4.png" alt="Desserts Range">
+      </div>
+    </div>
+
+    <button class="hero-arrow hero-prev" aria-label="Previous slide">&#8249;</button>
+    <button class="hero-arrow hero-next" aria-label="Next slide">&#8250;</button>
+
+    <div class="hero-dots">
+      <button class="hero-dot active" aria-label="Slide 1"></button>
+      <button class="hero-dot" aria-label="Slide 2"></button>
+      <button class="hero-dot" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- FEATURES BAR -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 40h36v-18H12L4 28v12z"/>
+              <circle cx="16" cy="44" r="4"/>
+              <circle cx="36" cy="44" r="4"/>
+              <path d="M40 22h12l8 10v8H40"/>
+              <path d="M48 18v8M52 22h-4"/>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4 class="feature-title">Next Day Delivery</h4>
+            <p class="feature-sub">Free Delivery On Orders Over <strong>£100</strong></p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M20 36c0-8 6-14 12-20 6 6 12 12 12 20 0 6-5 10-12 10s-12-4-12-10z"/>
+              <path d="M24 44h16"/>
+              <path d="M28 48h8"/>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4 class="feature-title">Value For Money</h4>
+            <p class="feature-sub">High Quality Products</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="8" y="18" width="48" height="32" rx="4"/>
+              <path d="M8 28h48"/>
+              <path d="M16 38h12"/>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4 class="feature-title">Secure Payment</h4>
+            <p class="feature-sub">100% Secure Payment</p>
+          </div>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon-wrap">
+            <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M16 32c0-10 8-16 16-16s16 6 16 16"/>
+              <path d="M12 32h8v14c0 4 4 6 8 6h16c4 0 8-2 8-6V32"/>
+              <path d="M28 42h8"/>
+            </svg>
+          </div>
+          <div class="feature-info">
+            <h4 class="feature-title">Live Support</h4>
+            <p class="feature-sub">Mon – Fri (0900 – 1700)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- SHOP BY CATEGORY -->
+   <section class="shop-category" id="shop-by-category">
+    <div class="container">
+      <!-- <h2 class="section-title">Shop By Category</h2> -->
+
+      <div class="amazon-category-grid">
+        <article class="amazon-dept-card">
+          <h3 class="amazon-dept-title">Cups &amp; Drinkware</h3>
+          <div class="amazon-dept-tiles amazon-dept-tiles-4">
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/coffee-cup-lids/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/lo4hj9jw-150x150.png" alt="Coffee Cups &amp; Lids" loading="lazy">
+              <span>Coffee Cups &amp; Lids</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/smoothie-cups/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/61-m0sVL7IL._AC_SX679_-150x150.jpg" alt="Smoothie Cups" loading="lazy">
+              <span>Smoothie Cups</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/soup-cups/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/1591415-150x150.jpg" alt="Soup Cups" loading="lazy">
+              <span>Soup Cups</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/ice-cream-tubs/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/a3a9cb586afacf4e49e3845ed79f2f8d-150x150.png" alt="Ice Cream Tubs and Lids" loading="lazy">
+              <span>Ice Cream Tubs</span>
+            </a>
+          </div>
+          <a href="https://twistedhygiene-packaging.co.uk/product-category/coffee-cup-lids/" class="amazon-dept-more">See more</a>
+        </article>
+
+        <article class="amazon-dept-card">
+          <h3 class="amazon-dept-title">Food Boxes &amp; Trays</h3>
+          <div class="amazon-dept-tiles amazon-dept-tiles-4">
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/bagasse-boxes/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/6ok8bedx-150x150.png" alt="Bagasse Boxes" loading="lazy">
+              <span>Bagasse Boxes</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/deli-boxes/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/dp7t4kmd-150x150.png" alt="Deli Boxes" loading="lazy">
+              <span>Deli Boxes</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/black-deli-boxes/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2026/05/47-150x150.jpg" alt="Black Deli Boxes" loading="lazy">
+              <span>Black Deli Boxes</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/food-trays/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/03/295762-150x150.jpg" alt="Cardboard Food Trays" loading="lazy">
+              <span>Food Trays</span>
+            </a>
+          </div>
+          <a href="https://twistedhygiene-packaging.co.uk/product-category/deli-boxes/" class="amazon-dept-more">See more</a>
+        </article>
+
+        <article class="amazon-dept-card">
+          <h3 class="amazon-dept-title">Bags &amp; Carriers</h3>
+          <div class="amazon-dept-tiles amazon-dept-tiles-4">
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/paper-carrier-bags/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/06/61W6oBvR0QL._AC_SX569_-150x150.jpg" alt="Paper Carrier Bags" loading="lazy">
+              <span>Paper Carrier Bags</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/plastic-carrier-bags/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/06/1gdu25dd-1-150x150.png" alt="Plastic Carrier Bags" loading="lazy">
+              <span>Plastic Carrier Bags</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/food-bags/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/9y5ye43c-150x150.png" alt="Food Bags" loading="lazy">
+              <span>Food Bags</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/bin-bags/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/1fxylfj6-150x150.png" alt="Bin Bags" loading="lazy">
+              <span>Bin Bags</span>
+            </a>
+          </div>
+          <a href="https://twistedhygiene-packaging.co.uk/product-category/paper-carrier-bags/" class="amazon-dept-more">See more</a>
+        </article>
+
+        <article class="amazon-dept-card">
+          <h3 class="amazon-dept-title">Tableware &amp; Wrap</h3>
+          <div class="amazon-dept-tiles amazon-dept-tiles-4">
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/cutlery-and-plates/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/04/71nHTwx-YrL._AC_SL1500_-150x150.jpg" alt="Cutlery and Plates" loading="lazy">
+              <span>Cutlery &amp; Plates</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/paper-napkins/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/12/poppies-range-150x150.jpg" alt="Napkins" loading="lazy">
+              <span>Napkins</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/greaseproof-paper/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/OIP-2-150x150.jpg" alt="Greaseproof Paper" loading="lazy">
+              <span>Greaseproof Paper</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/food-labelling-and-wrapping/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/02/vfnah7oe-150x150.png" alt="Food Labelling and Wrapping" loading="lazy">
+              <span>Labelling &amp; Wrap</span>
+            </a>
+          </div>
+          <a href="https://twistedhygiene-packaging.co.uk/product-category/cutlery-and-plates/" class="amazon-dept-more">See more</a>
+        </article>
+
+        <article class="amazon-dept-card">
+          <h3 class="amazon-dept-title">Bowls, Containers &amp; More</h3>
+          <div class="amazon-dept-tiles amazon-dept-tiles-4">
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/kraft-bowls-lids/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/11/exslzip4-150x150.png" alt="Kraft Bowls and Lids" loading="lazy">
+              <span>Kraft Bowls &amp; Lids</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/plastic-containers/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/11/8m8j4my2-150x150.png" alt="Plastic Containers" loading="lazy">
+              <span>Plastic Containers</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/foil-containers-with-lids/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/04/1695946538b842f8b5d06a123be231ca-goods-150x150.jpeg" alt="Foil Containers" loading="lazy">
+              <span>Foil Containers</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/platters/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/03/81tJKVsHKGS-150x150.jpg" alt="Platters &amp; Trays" loading="lazy">
+              <span>Platters &amp; Trays</span>
+            </a>
+          </div>
+          <a href="https://twistedhygiene-packaging.co.uk/product-category/kraft-bowls-lids/" class="amazon-dept-more">See more</a>
+        </article>
+
+        <article class="amazon-dept-card">
+          <h3 class="amazon-dept-title">Specialty &amp; Ingredients</h3>
+          <div class="amazon-dept-tiles amazon-dept-tiles-4">
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/desserts-range/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/nk2aorph-150x150.png" alt="Desserts Range" loading="lazy">
+              <span>Desserts Range</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/lavazza-coffee-range/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/12/usgr7a5i-150x150.png" alt="Lavazza Coffee" loading="lazy">
+              <span>Lavazza Coffee</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/monin-range/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/zug2pewe-150x150.png" alt="MONIN Range" loading="lazy">
+              <span>MONIN Range</span>
+            </a>
+            <a href="https://twistedhygiene-packaging.co.uk/product-category/spices/" class="amazon-tile">
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/06/7-4-150x150.png" alt="Peri Peri Spices" loading="lazy">
+              <span>Peri Peri Spices</span>
+            </a>
+          </div>
+          <a href="https://twistedhygiene-packaging.co.uk/product-category/desserts-range/" class="amazon-dept-more">See more</a>
+        </article>
+
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured-products">
+    <div class="container">
+      <h2 class="section-title">Featured Products</h2>
+
+      <div class="products-slider-wrap">
+        <button class="products-nav products-prev" type="button" aria-label="Previous products">&#8249;</button>
+
+        <div class="products-slider-viewport">
+          <div class="products-slider-track" id="productsTrack">
+
+            <article class="product-card">
+              <div class="card-img-slider" data-card-slider>
+                <button type="button" class="card-img-arrow card-img-prev" aria-label="Previous image">&#8249;</button>
+                <div class="card-img-viewport">
+                  <div class="card-img-track">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/Lift.jpg" alt="Evans HD Lift Degreaser 5 Litre" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/98.jpg" alt="Evans HD Lift Degreaser view 2" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/99.jpg" alt="Evans HD Lift Degreaser view 3" loading="lazy">
+                  </div>
+                </div>
+                <button type="button" class="card-img-arrow card-img-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <p class="product-category">Hygiene</p>
+              <h3 class="product-title">
+                <a href="https://twistedhygiene-packaging.co.uk/product/evans-hd-lift-degreaser-5-litre-2/">Evans HD Lift Degreaser 5 Litre</a>
+              </h3>
+              <p class="product-price"><span class="price-vat">EXC. VAT</span></p>
+              <a href="https://twistedhygiene-packaging.co.uk/product/evans-hd-lift-degreaser-5-litre-2/" class="btn-select-options">Select options</a>
+            </article>
+
+            <article class="product-card">
+              <span class="product-badge">-5%</span>
+              <div class="card-img-slider" data-card-slider>
+                <button type="button" class="card-img-arrow card-img-prev" aria-label="Previous image">&#8249;</button>
+                <div class="card-img-viewport">
+                  <div class="card-img-track">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/med-food-2-go-box.jpg" alt="Medium Food to Go Box" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/food-to-go-boxes.jpg" alt="Medium Food to Go Box view 2" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/2-6.png" alt="Medium Food to Go Box view 3" loading="lazy">
+                  </div>
+                </div>
+                <button type="button" class="card-img-arrow card-img-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <p class="product-category">Food Packaging</p>
+              <h3 class="product-title">
+                <a href="https://twistedhygiene-packaging.co.uk/product/medium-food-to-go-box-window-qty-270-pcs/">Medium Food to Go Box – Window – Qty : 270 PCs</a>
+              </h3>
+              <p class="product-price"><span class="price-vat">EXC. VAT</span></p>
+              <a href="https://twistedhygiene-packaging.co.uk/product/medium-food-to-go-box-window-qty-270-pcs/" class="btn-select-options">Select options</a>
+            </article>
+
+            <article class="product-card">
+              <div class="card-img-slider" data-card-slider>
+                <button type="button" class="card-img-arrow card-img-prev" aria-label="Previous image">&#8249;</button>
+                <div class="card-img-viewport">
+                  <div class="card-img-track">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/edenware-8oz-3.jpg" alt="Edenware Double Wall Cups" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/8oz-edenware-dw.jpg" alt="Edenware Double Wall Cups view 2" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/8oz-edenware-dw-2.jpg" alt="Edenware Double Wall Cups view 3" loading="lazy">
+                  </div>
+                </div>
+                <button type="button" class="card-img-arrow card-img-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <p class="product-category">Coffee Cups &amp; Lids</p>
+              <h3 class="product-title">
+                <a href="https://twistedhygiene-packaging.co.uk/product/8oz-12oz-16oz-edenware-double-wall-cups-2/">8oz / 12oz / 16oz Edenware Double Wall Cups</a>
+              </h3>
+              <p class="product-price"><span class="price-vat">EXC. VAT</span></p>
+              <a href="https://twistedhygiene-packaging.co.uk/product/8oz-12oz-16oz-edenware-double-wall-cups-2/" class="btn-select-options">Select options</a>
+            </article>
+
+            <article class="product-card">
+              <div class="card-img-slider" data-card-slider>
+                <button type="button" class="card-img-arrow card-img-prev" aria-label="Previous image">&#8249;</button>
+                <div class="card-img-viewport">
+                  <div class="card-img-track">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/4307-1-lrg.jpg" alt="Green/White Striped Paper Straws" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/R-6.jpg" alt="Green/White Striped Paper Straws view 2" loading="lazy">
+                  </div>
+                </div>
+                <button type="button" class="card-img-arrow card-img-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <p class="product-category">Straws</p>
+              <h3 class="product-title">
+                <a href="https://twistedhygiene-packaging.co.uk/product/green-white-striped-paper-straws-10mm-smoothie-straws-qty-250/">Green/White Striped Paper Straws, 10mm Smoothie Straws QTY: 250</a>
+              </h3>
+              <p class="product-price"><span class="price-range">&#163;6.99</span> <span class="price-vat">EXC. VAT</span></p>
+              <a href="https://twistedhygiene-packaging.co.uk/product/green-white-striped-paper-straws-10mm-smoothie-straws-qty-250/" class="btn-select-options">Select options</a>
+            </article>
+
+            <article class="product-card">
+              <div class="card-img-slider" data-card-slider>
+                <button type="button" class="card-img-arrow card-img-prev" aria-label="Previous image">&#8249;</button>
+                <div class="card-img-viewport">
+                  <div class="card-img-track">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/R-10.webp" alt="Bio Degradable Soup Cups" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/R-9.jpg" alt="Bio Degradable Soup Cups view 2" loading="lazy">
+                  </div>
+                </div>
+                <button type="button" class="card-img-arrow card-img-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <p class="product-category">Soup Cups</p>
+              <h3 class="product-title">
+                <a href="https://twistedhygiene-packaging.co.uk/product/8oz-12oz-16oz-biodegradable-soup-cups/">8oz / 12oz / 16oz Bio Degradable Soup Cups</a>
+              </h3>
+              <p class="product-price"><span class="price-vat">EXC. VAT</span></p>
+              <a href="https://twistedhygiene-packaging.co.uk/product/8oz-12oz-16oz-biodegradable-soup-cups/" class="btn-select-options">Select options</a>
+            </article>
+
+            <article class="product-card">
+              <div class="card-img-slider" data-card-slider>
+                <button type="button" class="card-img-arrow card-img-prev" aria-label="Previous image">&#8249;</button>
+                <div class="card-img-viewport">
+                  <div class="card-img-track">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/61nXWJzp9FL._AC_SX522_.jpg" alt="Sephra Milk Chocolate" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/61mDV90toL._AC_.jpg" alt="Sephra Milk Chocolate view 2" loading="lazy">
+                    <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/31ReJbrgE-L._AC_.jpg" alt="Sephra Milk Chocolate view 3" loading="lazy">
+                  </div>
+                </div>
+                <button type="button" class="card-img-arrow card-img-next" aria-label="Next image">&#8250;</button>
+              </div>
+              <p class="product-category">Desserts Range</p>
+              <h3 class="product-title">
+                <a href="https://twistedhygiene-packaging.co.uk/product/sephra-belgian-couverture-chocolates-2-5-kg/">Sephra Milk Chocolate – Belgian couverture 2.5 Kg</a>
+              </h3>
+              <p class="product-price"><span class="price-range">&#163;38.99</span></p>
+              <a href="https://twistedhygiene-packaging.co.uk/product/sephra-belgian-couverture-chocolates-2-5-kg/" class="btn-select-options">Select options</a>
+            </article>
+
+          </div>
+        </div>
+
+        <button class="products-nav products-next" type="button" aria-label="Next products">&#8250;</button>
+      </div>
+
+      <div class="products-dots" id="productsDots"></div>
+    </div>
+  </section>
+
+  <!-- BRANDING IMAGE BANNER -->
+  <section class="branding-banner">
+    <div class="container">
+      <div class="branding-banner-inner">
+        <img
+          class="branding-banner-img"
+          src="images/Website-Branding-home-page.png"
+          alt="Show Case your Brand - Get your Packaging Customised"
+        >
+         
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- GOOGLE REVIEWS -->
+  <section class="testimonials google-reviews" id="client-reviews">
+    <div class="container">
+      <h2 class="section-title">Customer Reviews</h2>
+
+      <div class="reviews-widget amazon-dept-card">
+        <div class="reviews-slider-wrap">
+          <button class="reviews-nav reviews-prev" type="button" aria-label="Previous reviews">&#8249;</button>
+
+          <div class="reviews-slider-viewport">
+            <div class="reviews-track" id="reviewsTrack">
+              <article class="google-review-card amazon-dept-card">
+                <div class="google-review-header">
+                  <img class="google-review-avatar" src="https://lh3.googleusercontent.com/a/ACg8ocIU6avo0--ef8vCIednL_xxyPP-2lWXek9d0L8p2pkHlSUj5A=w40-h40-c-rp-mo-br100" alt="H Ali profile picture" width="40" height="40" loading="lazy">
+                  <div class="google-review-meta">
+                    <div class="google-review-name">H Ali</div>
+                    <div class="google-review-date">Reviewed 3 months ago</div>
+                  </div>
+                  <div class="google-review-platform">
+                    <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" width="20" height="20" loading="lazy">
+                  </div>
+                </div>
+                <div class="google-review-stars" aria-label="5 out of 5 stars">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                </div>
+                <h4 class="google-review-title">Outstanding service and support</h4>
+                <span class="google-review-verified">Verified Google Review</span>
+                <div class="google-review-text" data-readmore>
+                  <p>Would like to Thanks Aqib for his amazing service to our business, Great guy readily available and goes beyond the needs.<br>Has looked after our account for a year and easy going and easy dealing.<br>Any issues been dealt with within hours as well.<br>Thanks Aqib you should be promoted to Managing Director</p>
+                </div>
+                <button class="google-review-readmore" type="button" hidden>Read more</button>
+              </article>
+
+              <article class="google-review-card amazon-dept-card">
+                <div class="google-review-header">
+                  <img class="google-review-avatar" src="https://lh3.googleusercontent.com/a-/ALV-UjUfBp4ns_8bBX5J5eRedtsjzSyAKtIQiRQBM-CRp9tFLrpDKxM=w40-h40-c-rp-mo-br100" alt="Sharon Coulson profile picture" width="40" height="40" loading="lazy">
+                  <div class="google-review-meta">
+                    <div class="google-review-name">Sharon Coulson</div>
+                    <div class="google-review-date">Reviewed 11 months ago</div>
+                  </div>
+                  <div class="google-review-platform">
+                    <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" width="20" height="20" loading="lazy">
+                  </div>
+                </div>
+                <div class="google-review-stars" aria-label="5 out of 5 stars">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                </div>
+                <h4 class="google-review-title">Excellent customer service</h4>
+                <span class="google-review-verified">Verified Google Review</span>
+                <div class="google-review-text" data-readmore>
+                  <p>Really excellent customer service - kept me updated when a product was on back order - great products when they arrived - really happy</p>
+                </div>
+                <button class="google-review-readmore" type="button" hidden>Read more</button>
+              </article>
+
+              <article class="google-review-card amazon-dept-card">
+                <div class="google-review-header">
+                  <img class="google-review-avatar" src="https://lh3.googleusercontent.com/a-/ALV-UjVX3PSAQzNacCNl7N66WLiFjCy5E-7Sf0vMvw5Jw1Vu0K5qUU4=w40-h40-c-rp-mo-br100" alt="Nanah Asamoah profile picture" width="40" height="40" loading="lazy">
+                  <div class="google-review-meta">
+                    <div class="google-review-name">Nanah Asamoah</div>
+                    <div class="google-review-date">Reviewed 1 year ago</div>
+                  </div>
+                  <div class="google-review-platform">
+                    <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" width="20" height="20" loading="lazy">
+                  </div>
+                </div>
+                <div class="google-review-stars" aria-label="5 out of 5 stars">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                </div>
+                <h4 class="google-review-title">Trusted supplier for our business</h4>
+                <span class="google-review-verified">Verified Google Review</span>
+                <div class="google-review-text" data-readmore>
+                  <p>Great customer service, great products and great prices. I've worked with them for a year solely online and communication has been excellent. Everything is delivered as expected and in good time. This is a business you can trust and I recommend.</p>
+                </div>
+                <button class="google-review-readmore" type="button" hidden>Read more</button>
+              </article>
+
+              <article class="google-review-card amazon-dept-card">
+                <div class="google-review-header">
+                  <img class="google-review-avatar" src="https://lh3.googleusercontent.com/a/ACg8ocKHUouEOL9CJJxwPExaGARsQeKvIjkQPXkvShHMNJekr6tJMA=w40-h40-c-rp-mo-br100" alt="Shahzad Khan profile picture" width="40" height="40" loading="lazy">
+                  <div class="google-review-meta">
+                    <div class="google-review-name">Shahzad Khan</div>
+                    <div class="google-review-date">Reviewed 1 year ago</div>
+                  </div>
+                  <div class="google-review-platform">
+                    <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" width="20" height="20" loading="lazy">
+                  </div>
+                </div>
+                <div class="google-review-stars" aria-label="5 out of 5 stars">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                </div>
+                <h4 class="google-review-title">Brilliant service as always</h4>
+                <span class="google-review-verified">Verified Google Review</span>
+                <div class="google-review-text">
+                  <p>Brilliant service as always 👍</p>
+                </div>
+              </article>
+
+              <article class="google-review-card amazon-dept-card">
+                <div class="google-review-header">
+                  <img class="google-review-avatar" src="https://lh3.googleusercontent.com/a-/ALV-UjXIK_u7KlS11myqwVl4d6s0sPQiqZc_8jgf72EW1oV2J5gj7L4=w40-h40-c-rp-mo-br100" alt="Kerry Hadaway profile picture" width="40" height="40" loading="lazy">
+                  <div class="google-review-meta">
+                    <div class="google-review-name">Kerry Hadaway</div>
+                    <div class="google-review-date">Reviewed 1 year ago</div>
+                  </div>
+                  <div class="google-review-platform">
+                    <img src="https://cdn.trustindex.io/assets/platform/Google/icon.svg" alt="Google" width="20" height="20" loading="lazy">
+                  </div>
+                </div>
+                <div class="google-review-stars" aria-label="5 out of 5 stars">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                  <img src="https://cdn.trustindex.io/assets/platform/Google/star/f.svg" alt="" width="17" height="17">
+                </div>
+                <h4 class="google-review-title">Happy with my order</h4>
+                <span class="google-review-verified">Verified Google Review</span>
+                <div class="google-review-text">
+                  <p>Very good customer service. Happy with my order.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <button class="reviews-nav reviews-next" type="button" aria-label="Next reviews">&#8250;</button>
+          <div class="reviews-dots" id="reviewsDots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SHOWCASE YOUR BRAND -->
+  <section class="promo-banner brand-showcase">
+    <div class="container">
+      <div class="promo-inner">
+        <div class="promo-header">
+          <h2>Showcase your Brand</h2>
+          <p>GET YOUR PACKAGING Customised</p>
+        </div>
+
+        <div class="brand-marquee-wrap" aria-label="Brand showcase logos">
+          <div class="brand-marquee">
+            <div class="brand-marquee-track">
+              <div class="brand-logo-item">
+                <img src="images/brand-33.webp" alt="Custom branded packaging example">
+              </div>
+              <div class="brand-logo-item">
+                <img src="images/brand-44.webp" alt="Custom branded packaging example">
+              </div>
+              <div class="brand-logo-item">
+                <img src="images/brand-22.webp" alt="Custom branded packaging example">
+              </div>
+              <div class="brand-logo-item">
+                <img src="images/brand-11.webp" alt="Custom branded packaging example">
+              </div>
+              <div class="brand-logo-item" aria-hidden="true">
+                <img src="images/brand-33.webp" alt="">
+              </div>
+              <div class="brand-logo-item" aria-hidden="true">
+                <img src="images/brand-44.webp" alt="">
+              </div>
+              <div class="brand-logo-item" aria-hidden="true">
+                <img src="images/brand-22.webp" alt="">
+              </div>
+              <div class="brand-logo-item" aria-hidden="true">
+                <img src="images/brand-11.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="promo-action">
+          <a href="#" class="btn btn-white">Get a Quotation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-newsletter">
+      <div class="container">
+        <h2 class="footer-newsletter-title">Subscribe To Our Newsletter</h2>
+        <p class="footer-newsletter-text">Get offers, new arrivals and delivery updates straight to your inbox.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" aria-label="Email address">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-accent-bar"></div>
+
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-col" id="about-us">
+          <a href="#" class="footer-logo">
+            <img src="images/logo.png" alt="Twisted Hygiene &amp; Packaging" class="footer-logo-img">
+          </a>
+          <p class="footer-about">Twisted Hygiene &amp; Packaging is a leading supplier of premium eco-friendly packaging and hygiene products across Scotland and the UK.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Information</h4>
+          <ul class="footer-links">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">My Account</h4>
+          <ul class="footer-links">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Wishlist</a></li>
+           </ul>
+        </div>
+
+        <div class="footer-col footer-contact-col" id="contact-us">
+          <h4 class="footer-heading">Get in Touch</h4>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div>
+              <span class="footer-contact-link">149 Woodhead Road, Glasgow, G53 7NN, United Kingdom</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div>
+              <a class="footer-contact-link" href="tel:+441414283149">0141 428 3149</a>
+              <span class="footer-contact-note">Mon&ndash;Fri: 9am&ndash;5pm</span>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <span class="footer-contact-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <div>
+              <a class="footer-contact-link" href="mailto:info@twistedhygiene-packaging.co.uk">info@twistedhygiene-packaging.co.uk</a>
+              <span class="footer-contact-note">We reply within 24 hours</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-mid">
+        <div class="footer-social">
+          <a href="#" class="footer-social-link" title="Facebook" aria-label="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-13h4v2"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" title="Twitter" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" title="Instagram" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+        </div>
+
+        <div class="footer-payments">
+          <ul class="payment-icons payment-icons-grayscale">
+            <li><img width="60" height="36" src="images/payment1.png" alt="Payment method"></li>
+            <li><img width="60" height="36" src="images/payment2.png" alt="Payment method"></li>
+            <li><img width="60" height="36" src="images/payment3.png" alt="Payment method"></li>
+            <li><img width="60" height="36" src="images/payment4.png" alt="Payment method"></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-legal">
+        <p>&copy; 2026 Twisted Hygiene &amp; Packaging. All rights reserved.</p>
+        <p class="footer-legal-note">Use of this website constitutes acceptance of our User Agreement and Privacy Policy.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHAT WIDGET -->
+  <div class="chat-widget">
+    <span class="chat-dot"></span>
+    Online
+  </div>
+
+  <!-- Countdown Timer Script -->
+  <script>
+    function updateHeaderOffset() {
+      const header = document.getElementById('siteHeader');
+      const offset = document.getElementById('headerOffset');
+      if (!header || !offset) return;
+
+      const headerHeight = header.offsetHeight;
+      offset.style.height = headerHeight + 'px';
+      document.documentElement.style.setProperty('--site-header-height', headerHeight + 'px');
+    }
+
+    updateHeaderOffset();
+    window.addEventListener('resize', updateHeaderOffset);
+    window.addEventListener('load', updateHeaderOffset);
+
+    if (window.ResizeObserver) {
+      const header = document.getElementById('siteHeader');
+      if (header) {
+        const headerObserver = new ResizeObserver(updateHeaderOffset);
+        headerObserver.observe(header);
+      }
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const target = new Date();
+      target.setHours(13, 0, 0, 0);
+      if (now >= target) target.setDate(target.getDate() + 1);
+
+      const diff = target - now;
+      const h = Math.floor(diff / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+
+      document.getElementById('hours').textContent = String(h).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Products Mega Menu
+    const productsTrigger = document.getElementById('productsTrigger');
+    const headerNavRow = document.getElementById('headerNavRow');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+
+    productsTrigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      headerNavRow.classList.toggle('mega-open');
+    });
+
+    if (mobileMenuToggle) {
+      mobileMenuToggle.addEventListener('click', function () {
+        const isOpen = headerNavRow.classList.toggle('nav-open');
+        mobileMenuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        updateHeaderOffset();
+      });
+    }
+
+    document.addEventListener('click', function (e) {
+      const clickedToggle = mobileMenuToggle && mobileMenuToggle.contains(e.target);
+      if (!headerNavRow.contains(e.target) && !clickedToggle) {
+        headerNavRow.classList.remove('mega-open');
+        headerNavRow.classList.remove('nav-open');
+        if (mobileMenuToggle) {
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        }
+        updateHeaderOffset();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        headerNavRow.classList.remove('mega-open');
+        headerNavRow.classList.remove('nav-open');
+        if (mobileMenuToggle) {
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        }
+        updateHeaderOffset();
+      }
+    });
+
+    // Hero Slider
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroDots = document.querySelectorAll('.hero-dot');
+    let currentSlide = 0;
+    let slideTimer;
+
+    function showSlide(index) {
+      heroSlides.forEach((slide, i) => slide.classList.toggle('active', i === index));
+      heroDots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+      currentSlide = index;
+    }
+
+    function nextSlide() {
+      showSlide((currentSlide + 1) % heroSlides.length);
+    }
+
+    function prevSlide() {
+      showSlide((currentSlide - 1 + heroSlides.length) % heroSlides.length);
+    }
+
+    function startSlider() {
+      clearInterval(slideTimer);
+      slideTimer = setInterval(nextSlide, 5000);
+    }
+
+    document.querySelector('.hero-next').addEventListener('click', function () {
+      nextSlide();
+      startSlider();
+    });
+
+    document.querySelector('.hero-prev').addEventListener('click', function () {
+      prevSlide();
+      startSlider();
+    });
+
+    heroDots.forEach(function (dot, index) {
+      dot.addEventListener('click', function () {
+        showSlide(index);
+        startSlider();
+      });
+    });
+
+    startSlider();
+
+    // Section Sliders (Featured Products + Shop By Category)
+    function initSectionSlider(trackId, dotsId, prevBtn, nextBtn) {
+      const track = document.getElementById(trackId);
+      const cards = track.querySelectorAll('.product-card');
+      const dotsWrap = document.getElementById(dotsId);
+      const viewport = track.closest('.products-slider-viewport');
+      let page = 0;
+      let perView = 4;
+
+      function getPerView() {
+        if (window.innerWidth <= 576) return 2;
+        if (window.innerWidth <= 992) return 2;
+        return 4;
+      }
+
+      function getMaxPage() {
+        return Math.max(0, Math.ceil(cards.length / perView) - 1);
+      }
+
+      function updateWidths() {
+        perView = getPerView();
+        const gap = 14;
+        const cardWidth = (viewport.offsetWidth - gap * (perView - 1)) / perView;
+        cards.forEach(function (card) {
+          card.style.width = cardWidth + 'px';
+        });
+        return cardWidth;
+      }
+
+      function buildDots() {
+        dotsWrap.innerHTML = '';
+        const totalPages = getMaxPage() + 1;
+        for (let i = 0; i < totalPages; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'products-dot' + (i === page ? ' active' : '');
+          dot.setAttribute('aria-label', 'Page ' + (i + 1));
+          dot.addEventListener('click', function () {
+            page = i;
+            moveSlider();
+          });
+          dotsWrap.appendChild(dot);
+        }
+      }
+
+      function moveSlider() {
+        const gap = 14;
+        const cardWidth = updateWidths();
+        const offset = page * (cardWidth + gap) * perView;
+        track.style.transform = 'translateX(-' + offset + 'px)';
+        dotsWrap.querySelectorAll('.products-dot').forEach(function (dot, i) {
+          dot.classList.toggle('active', i === page);
+        });
+      }
+
+      prevBtn.addEventListener('click', function () {
+        page = page > 0 ? page - 1 : getMaxPage();
+        moveSlider();
+      });
+
+      nextBtn.addEventListener('click', function () {
+        page = page < getMaxPage() ? page + 1 : 0;
+        moveSlider();
+      });
+
+      window.addEventListener('resize', function () {
+        if (page > getMaxPage()) page = getMaxPage();
+        buildDots();
+        moveSlider();
+      });
+
+      buildDots();
+      moveSlider();
+    }
+
+    initSectionSlider(
+      'productsTrack',
+      'productsDots',
+      document.querySelector('.featured-products .products-prev'),
+      document.querySelector('.featured-products .products-next')
+    );
+
+    // Google Reviews Slider (fixed-width cards)
+    (function () {
+      const track = document.getElementById('reviewsTrack');
+      const dotsWrap = document.getElementById('reviewsDots');
+      const viewport = track.closest('.reviews-slider-viewport');
+      const cards = track.querySelectorAll('.google-review-card');
+      const prevBtn = document.querySelector('.reviews-prev');
+      const nextBtn = document.querySelector('.reviews-next');
+      const sliderWrap = track.closest('.reviews-slider-wrap');
+      const styles = getComputedStyle(document.querySelector('.google-reviews'));
+      let cardWidth = parseInt(styles.getPropertyValue('--review-card-width'), 10) || 275;
+      let gap = parseInt(styles.getPropertyValue('--review-card-gap'), 10) || 20;
+      let index = 0;
+      let autoplayTimer;
+
+      function getStep() {
+        return cardWidth + gap;
+      }
+
+      function getPerView() {
+        return Math.max(1, Math.floor((viewport.offsetWidth + gap) / getStep()));
+      }
+
+      function getMaxIndex() {
+        return Math.max(0, cards.length - getPerView());
+      }
+
+      function buildDots() {
+        dotsWrap.innerHTML = '';
+        const total = getMaxIndex() + 1;
+        for (let i = 0; i < total; i++) {
+          const dot = document.createElement('button');
+          dot.className = 'reviews-dot' + (i === index ? ' active' : '');
+          dot.setAttribute('aria-label', 'Go to review ' + (i + 1));
+          dot.addEventListener('click', function () {
+            index = i;
+            moveSlider();
+            restartAutoplay();
+          });
+          dotsWrap.appendChild(dot);
+        }
+      }
+
+      function moveSlider() {
+        const stylesNow = getComputedStyle(document.querySelector('.google-reviews'));
+        cardWidth = parseInt(stylesNow.getPropertyValue('--review-card-width'), 10) || 275;
+        gap = parseInt(stylesNow.getPropertyValue('--review-card-gap'), 10) || 20;
+        if (index > getMaxIndex()) index = getMaxIndex();
+        track.style.transform = 'translateX(-' + (index * getStep()) + 'px)';
+        dotsWrap.querySelectorAll('.reviews-dot').forEach(function (dot, i) {
+          dot.classList.toggle('active', i === index);
+        });
+      }
+
+      function nextSlide() {
+        index = index < getMaxIndex() ? index + 1 : 0;
+        moveSlider();
+      }
+
+      function prevSlide() {
+        index = index > 0 ? index - 1 : getMaxIndex();
+        moveSlider();
+      }
+
+      function startAutoplay() {
+        clearInterval(autoplayTimer);
+        autoplayTimer = setInterval(nextSlide, 6000);
+      }
+
+      function restartAutoplay() {
+        startAutoplay();
+      }
+
+      prevBtn.addEventListener('click', function () {
+        prevSlide();
+        restartAutoplay();
+      });
+
+      nextBtn.addEventListener('click', function () {
+        nextSlide();
+        restartAutoplay();
+      });
+
+      sliderWrap.addEventListener('mouseenter', function () {
+        clearInterval(autoplayTimer);
+      });
+
+      sliderWrap.addEventListener('mouseleave', startAutoplay);
+
+      window.addEventListener('resize', function () {
+        buildDots();
+        moveSlider();
+      });
+
+      buildDots();
+      moveSlider();
+      startAutoplay();
+    })();
+
+    // Review Read More
+    document.querySelectorAll('.google-review-card').forEach(function (card) {
+      const textEl = card.querySelector('[data-readmore]');
+      const btn = card.querySelector('.google-review-readmore');
+      if (!textEl || !btn) return;
+
+      textEl.classList.add('is-clamped');
+      if (textEl.scrollHeight > textEl.clientHeight + 2) {
+        btn.hidden = false;
+      } else {
+        textEl.classList.remove('is-clamped');
+      }
+
+      btn.addEventListener('click', function () {
+        const expanded = textEl.classList.toggle('is-clamped');
+        btn.textContent = expanded ? 'Read more' : 'Hide';
+      });
+    });
+
+    // Card Image Sliders (Featured Products only)
+    document.querySelectorAll('.featured-products [data-card-slider]').forEach(function (slider) {
+      const track = slider.querySelector('.card-img-track');
+      const images = track.querySelectorAll('img');
+      let imgIndex = 0;
+
+      if (images.length <= 1) {
+        slider.querySelectorAll('.card-img-arrow').forEach(function (btn) {
+          btn.style.visibility = 'hidden';
+        });
+        return;
+      }
+
+      function moveCardImg() {
+        track.style.transform = 'translateX(-' + (imgIndex * 100) + '%)';
+      }
+
+      slider.querySelector('.card-img-prev').addEventListener('click', function (e) {
+        e.stopPropagation();
+        imgIndex = (imgIndex - 1 + images.length) % images.length;
+        moveCardImg();
+      });
+
+      slider.querySelector('.card-img-next').addEventListener('click', function (e) {
+        e.stopPropagation();
+        imgIndex = (imgIndex + 1) % images.length;
+        moveCardImg();
+      });
+    });
+  </script>
+
+</body>
+</html>
