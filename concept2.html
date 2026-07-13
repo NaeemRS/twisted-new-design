@@ -1,0 +1,769 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twisted | Concept 2 — Charcoal &amp; Cyan</title>
+  <meta name="description" content="Premium packaging and hygiene supplies for UK hospitality — cups, deli boxes, bags, and custom branded packaging from Twisted Hygiene &amp; Packaging, Glasgow.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="premium-concepts.css">
+</head>
+<body class="pc-page concept-2">
+
+  <!-- Top bar -->
+  <div class="pc-topbar">
+    <div class="pc-container pc-topbar-inner">
+      <span>Free delivery on orders over <strong>&pound;100</strong></span>
+      <span class="pc-topbar-rating">
+        <strong>Excellent</strong>
+        <span class="pc-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span>4.9/5 from 340+ reviews</span>
+      </span>
+      <span>Next dispatch in <strong><span id="pcHours">00</span>h <span id="pcMinutes">00</span>m <span id="pcSeconds">00</span>s</strong></span>
+      <span>Need help? <a href="tel:+441414283149">0141 428 3149</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="pc-header" id="pcHeader">
+    <div class="pc-container">
+      <div class="pc-header-main">
+        <div class="pc-header-toolbar">
+          <a href="concept2.html" class="pc-logo" aria-label="Twisted Hygiene and Packaging home">
+            <img src="images/logo.png" alt="Twisted Hygiene &amp; Packaging">
+          </a>
+
+          <form class="pc-search" action="shop.html" method="get" role="search">
+            <label for="pcSearchCat" class="visually-hidden">Category</label>
+            <select id="pcSearchCat" name="category" aria-label="Search category">
+              <option value="">All Categories</option>
+              <option value="cups">Coffee &amp; Smoothie Cups</option>
+              <option value="deli">Deli Boxes &amp; Trays</option>
+              <option value="bags">Bags &amp; Carriers</option>
+              <option value="hygiene">Hygiene Products</option>
+              <option value="custom">Custom Packaging</option>
+            </select>
+            <label for="pcSearchInput" class="visually-hidden">Search products</label>
+            <input id="pcSearchInput" type="search" name="s" placeholder="Search packaging, cups, hygiene&hellip;">
+            <button type="submit" aria-label="Search">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            </button>
+          </form>
+
+          <div class="pc-header-actions">
+            <a href="#" class="pc-header-action" aria-label="My account">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg>
+            </a>
+            <a href="#" class="pc-header-action" aria-label="Wishlist">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+              <span class="pc-badge" data-cart-badge hidden>0</span>
+            </a>
+            <a href="#" class="pc-header-action pc-header-action--cart" aria-label="Shopping cart">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h2l2.2 12.3a2 2 0 0 0 2 1.7h9.6a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+              <span class="pc-cart-label"><span data-cart-count>0</span> items | <span data-cart-total>&pound;0.00</span></span>
+            </a>
+            <button class="pc-menu-toggle" type="button" id="pcMenuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="pcNavRow">
+              <span></span><span></span><span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc-nav-row" id="pcNavRow">
+        <nav class="pc-nav" aria-label="Main navigation">
+          <div class="pc-nav-item has-mega">
+            <a href="shop.html" class="pc-nav-link" id="pcProductsTrigger" aria-expanded="false" aria-haspopup="true">Products <span class="pc-nav-arrow" aria-hidden="true">&#9662;</span></a>
+          </div>
+          <a href="shop.html">New In</a>
+          <a href="shop.html">Clearance</a>
+          <a href="shop.html">Monthly Offer</a>
+          <a href="shop.html#custom">Customised Packaging</a>
+        </nav>
+
+        <div class="pc-mega" id="pcMegaMenu" aria-label="Product categories">
+          <div class="pc-container pc-mega-inner">
+            <ul class="pc-mega-col">
+              <li><a href="shop.html#cat-coffee-cups"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/lo4hj9jw-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Coffee Cups &amp; Lids</span></a></li>
+              <li><a href="shop.html#cat-smoothie"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/61-m0sVL7IL._AC_SX679_-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Smoothie Cups</span></a></li>
+              <li><a href="shop.html#cat-soup-cups"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/1591415-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Soup Cups</span></a></li>
+              <li><a href="shop.html#cat-deli-boxes"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/dp7t4kmd-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Deli Boxes</span></a></li>
+              <li><a href="shop.html#cat-bagasse-boxes"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/6ok8bedx-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Bagasse Boxes</span></a></li>
+              <li><a href="shop.html#cat-food-trays"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/03/295762-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Food Trays</span></a></li>
+              <li><a href="shop.html#cat-kraft-bowls"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/11/exslzip4-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Kraft Bowls &amp; Lids</span></a></li>
+            </ul>
+            <ul class="pc-mega-col">
+              <li><a href="shop.html#cat-food-bags"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/9y5ye43c-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Food Bags</span></a></li>
+              <li><a href="shop.html#cat-paper-carrier"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/06/61W6oBvR0QL._AC_SX569_-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Paper Carrier Bags</span></a></li>
+              <li><a href="shop.html#cat-plastic-bags"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/06/1gdu25dd-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Plastic Carrier Bags</span></a></li>
+              <li><a href="shop.html#cat-pizza-box"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/R-11-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Pizza Boxes</span></a></li>
+              <li><a href="shop.html#cat-cake-boxes"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/71r77Eq-qL._SX425_-360x340.jpg" alt="" width="36" height="36" loading="lazy"><span>Cake Boxes</span></a></li>
+              <li><a href="shop.html#cat-ice-cream"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/a3a9cb586afacf4e49e3845ed79f2f8d-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Ice Cream Tubs</span></a></li>
+              <li><a href="shop.html#cat-straws"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/4307-1-lrg-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Straws</span></a></li>
+            </ul>
+            <ul class="pc-mega-col">
+              <li><a href="shop.html#cat-hygiene"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/04/cleaning-collection-bucket-copy-space-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Hygiene Products</span></a></li>
+              <li><a href="shop.html#cat-bin-bags"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/1fxylfj6-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Bin Bags</span></a></li>
+              <li><a href="shop.html#cat-centrefeed"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/lgk93dva-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Centrefeed Rolls</span></a></li>
+              <li><a href="shop.html#cat-cutlery"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/04/71nHTwx-YrL._AC_SL1500_-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Cutlery &amp; Plates</span></a></li>
+              <li><a href="shop.html#cat-napkins"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/12/poppies-range-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Napkins</span></a></li>
+              <li><a href="shop.html#cat-greaseproof"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/OIP-2-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Greaseproof Paper</span></a></li>
+              <li><a href="shop.html#cat-foil"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/04/1695946538b842f8b5d06a123be231ca-goods-150x150.jpeg" alt="" width="36" height="36" loading="lazy"><span>Foil Containers</span></a></li>
+            </ul>
+            <ul class="pc-mega-col">
+              <li><a href="shop.html#cat-desserts"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/nk2aorph-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Desserts Range</span></a></li>
+              <li><a href="shop.html#cat-lavazza"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/12/usgr7a5i-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Lavazza Coffee</span></a></li>
+              <li><a href="shop.html#cat-monin"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/zug2pewe-150x150.png" alt="" width="36" height="36" loading="lazy"><span>MONIN Syrups</span></a></li>
+              <li><a href="shop.html#cat-catering"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/05/3i1v2ll4-150x150.png" alt="" width="36" height="36" loading="lazy"><span>Catering Equipment</span></a></li>
+              <li><a href="shop.html#cat-thermal"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/199-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Thermal Till Rolls</span></a></li>
+              <li><a href="shop.html#cat-christmas-cups"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/10/29-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Seasonal Cups</span></a></li>
+              <li><a href="shop.html#cat-clear-deli"><img class="pc-mega-thumb" src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2025/02/237641-1-150x150.jpg" alt="" width="36" height="36" loading="lazy"><span>Clear Deli Boxes</span></a></li>
+            </ul>
+            <aside class="pc-mega-featured">
+              <img src="images/Website-Branding-home-page.png" alt="" loading="lazy">
+              <div class="pc-mega-featured-content">
+                <h3>Custom Branding</h3>
+                <p>Put your logo on cups, bags, and boxes. Low MOQs, fast artwork proofs, and UK-wide delivery.</p>
+                <a href="shop.html#custom" class="pc-btn pc-btn--primary">Explore Custom Packaging</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- Hero 2: Charcoal / cyan 50-50 split + stats bar -->
+    <section class="pc-hero pc-hero--split" aria-labelledby="hero-heading">
+      <div class="pc-hero-split-panel">
+        <div class="pc-hero-split-copy">
+          <p class="pc-hero__kicker">Twisted Hygiene &amp; Packaging</p>
+          <h1 class="pc-hero__title" id="hero-heading">Engineered packaging for <em>modern food service</em></h1>
+          <p class="pc-hero__desc">Cups, boxes and hygiene at scale — Glasgow fulfilment, next-day dispatch and volume pricing for UK hospitality teams.</p>
+          <div class="pc-hero__ctas">
+            <a href="shop.html" class="pc-btn pc-btn--primary">Shop Catalogue &#8594;</a>
+            <a href="#custom-packaging" class="pc-btn pc-btn--outline">Request Quote</a>
+          </div>
+        </div>
+      </div>
+      <div class="pc-hero-split-media">
+        <img src="images/hero-hygiene.jpg" alt="Hygiene and packaging range for hospitality">
+        <div class="pc-hero-split-badge">
+          <strong>2,400+</strong>
+          <span>SKUs live</span>
+        </div>
+      </div>
+      <div class="pc-hero-statsbar">
+        <div class="pc-container pc-hero-statsbar-inner">
+          <div><strong>24hr</strong><span>Dispatch window</span></div>
+          <div><strong>Free</strong><span>Delivery over &pound;100</span></div>
+          <div><strong>100%</strong><span>Secure checkout</span></div>
+          <div><strong>Mon&ndash;Fri</strong><span>Live support 9&ndash;5</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modern Categories -->
+    <section class="pc-cats" id="categories" aria-labelledby="cats-heading">
+      <div class="pc-container">
+        <header class="pc-cats-head">
+          <div>
+            <span class="pc-kicker">Browse the range</span>
+            <h2 class="pc-section-title" id="cats-heading">Shop by Category</h2>
+          </div>
+          <a href="shop.html" class="pc-cats-all">View all categories <span aria-hidden="true">&#8594;</span></a>
+        </header>
+
+        <div class="pc-cats-grid">
+          <a href="shop.html#cat-coffee-cups" class="pc-cat-card pc-cat-card--feature">
+            <div class="pc-cat-card-media">
+              <img src="images/category-coffee.jpg" alt="" loading="lazy">
+            </div>
+            <div class="pc-cat-card-body">
+              <span class="pc-cat-count">120+ products</span>
+              <h3>Coffee Cups &amp; Lids</h3>
+              <p>Double-wall, ripple &amp; compostable options</p>
+              <span class="pc-cat-go">Explore &#8594;</span>
+            </div>
+          </a>
+
+          <a href="shop.html#cat-deli-boxes" class="pc-cat-card">
+            <div class="pc-cat-card-media">
+              <img src="images/category-deli.jpg" alt="" loading="lazy">
+            </div>
+            <div class="pc-cat-card-body">
+              <h3>Deli Boxes</h3>
+              <span class="pc-cat-go">Shop &#8594;</span>
+            </div>
+          </a>
+
+          <a href="shop.html#cat-smoothie" class="pc-cat-card">
+            <div class="pc-cat-card-media">
+              <img src="images/category-smoothie.jpg" alt="" loading="lazy">
+            </div>
+            <div class="pc-cat-card-body">
+              <h3>Smoothie Cups</h3>
+              <span class="pc-cat-go">Shop &#8594;</span>
+            </div>
+          </a>
+
+          <a href="shop.html#cat-hygiene" class="pc-cat-card">
+            <div class="pc-cat-card-media">
+              <img src="images/Highgene.png" alt="" loading="lazy">
+            </div>
+            <div class="pc-cat-card-body">
+              <h3>Hygiene</h3>
+              <span class="pc-cat-go">Shop &#8594;</span>
+            </div>
+          </a>
+
+          <a href="shop.html#cat-desserts" class="pc-cat-card">
+            <div class="pc-cat-card-media">
+              <img src="images/category-desserts.jpg" alt="" loading="lazy">
+            </div>
+            <div class="pc-cat-card-body">
+              <h3>Desserts</h3>
+              <span class="pc-cat-go">Shop &#8594;</span>
+            </div>
+          </a>
+
+          <a href="shop.html#cat-food-bags" class="pc-cat-card">
+            <div class="pc-cat-card-media">
+              <img src="images/Branded-bags-1.png" alt="" loading="lazy">
+            </div>
+            <div class="pc-cat-card-body">
+              <h3>Bags &amp; Carriers</h3>
+              <span class="pc-cat-go">Shop &#8594;</span>
+            </div>
+          </a>
+
+          <a href="#custom-packaging" class="pc-cat-card pc-cat-card--accent">
+            <div class="pc-cat-card-media">
+              <img src="images/customized-paking.png" alt="" loading="lazy">
+            </div>
+            <div class="pc-cat-card-body">
+              <span class="pc-cat-badge">Popular</span>
+              <h3>Custom Branding</h3>
+              <span class="pc-cat-go">Get a quote &#8594;</span>
+            </div>
+          </a>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="pc-section pc-products-section" aria-labelledby="products-heading">
+      <div class="pc-container">
+        <header class="pc-products-head">
+          <div>
+            <span class="pc-kicker">Trade favourites</span>
+            <h2 class="pc-section-title" id="products-heading">Featured Products</h2>
+          </div>
+          <a href="shop.html" class="pc-cats-all">View all products <span aria-hidden="true">&#8594;</span></a>
+        </header>
+
+        <div class="pc-products-grid pc-products-grid--modern">
+
+          <article class="pc-product-card">
+            <div class="pc-product-media">
+              <span class="pc-badge-sale">Sale</span>
+              <img src="images/product-paper-cups.jpg" alt="12oz double wall paper coffee cups" loading="lazy">
+              <div class="pc-product-actions">
+                <button type="button" class="pc-product-action" data-wishlist aria-label="Add to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Quick view">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Compare">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l5 5-5 5"/><path d="M21 8H9a5 5 0 0 0 0 10h4"/><path d="M8 21l-5-5 5-5"/><path d="M3 16h12a5 5 0 0 0 0-10H11"/></svg>
+                </button>
+              </div>
+              <button type="button" class="pc-product-cart-btn" data-add-cart data-price="42.50">Add to Cart</button>
+            </div>
+            <div class="pc-product-body">
+              <div class="pc-product-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(48)</span></div>
+              <h3 class="pc-product-title"><a href="shop.html">12oz Double Wall Paper Cups (500)</a></h3>
+              <div class="pc-product-price">
+                <span class="pc-price-current">&pound;42.50</span>
+                <span class="pc-price-was">&pound;48.00</span>
+                <span class="pc-price-vat">excl. VAT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pc-product-card">
+            <div class="pc-product-media">
+              <span class="pc-badge-new">New</span>
+              <img src="images/product-soup-cups.jpg" alt="16oz kraft soup cups with lids" loading="lazy">
+              <div class="pc-product-actions">
+                <button type="button" class="pc-product-action" data-wishlist aria-label="Add to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Quick view">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Compare">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l5 5-5 5"/><path d="M21 8H9a5 5 0 0 0 0 10h4"/><path d="M8 21l-5-5 5-5"/><path d="M3 16h12a5 5 0 0 0 0-10H11"/></svg>
+                </button>
+              </div>
+              <button type="button" class="pc-product-cart-btn" data-add-cart data-price="36.95">Add to Cart</button>
+            </div>
+            <div class="pc-product-body">
+              <div class="pc-product-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(32)</span></div>
+              <h3 class="pc-product-title"><a href="shop.html">16oz Kraft Soup Cups &amp; Lids (250)</a></h3>
+              <div class="pc-product-price">
+                <span class="pc-price-current">&pound;36.95</span>
+                <span class="pc-price-vat">excl. VAT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pc-product-card">
+            <div class="pc-product-media">
+              <img src="images/product-straws.jpg" alt="Black paper straws" loading="lazy">
+              <div class="pc-product-actions">
+                <button type="button" class="pc-product-action" data-wishlist aria-label="Add to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Quick view">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Compare">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l5 5-5 5"/><path d="M21 8H9a5 5 0 0 0 0 10h4"/><path d="M8 21l-5-5 5-5"/><path d="M3 16h12a5 5 0 0 0 0-10H11"/></svg>
+                </button>
+              </div>
+              <button type="button" class="pc-product-cart-btn" data-add-cart data-price="18.75">Add to Cart</button>
+            </div>
+            <div class="pc-product-body">
+              <div class="pc-product-stars" aria-label="4 stars">&#9733;&#9733;&#9733;&#9733;&#9734; <span>(21)</span></div>
+              <h3 class="pc-product-title"><a href="shop.html">Paper Straws 6mm — Black (2500)</a></h3>
+              <div class="pc-product-price">
+                <span class="pc-price-current">&pound;18.75</span>
+                <span class="pc-price-vat">excl. VAT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pc-product-card">
+            <div class="pc-product-media">
+              <span class="pc-badge-sale">-15%</span>
+              <img src="images/category-deli.jpg" alt="Kraft deli boxes 750ml" loading="lazy">
+              <div class="pc-product-actions">
+                <button type="button" class="pc-product-action" data-wishlist aria-label="Add to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Quick view">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Compare">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l5 5-5 5"/><path d="M21 8H9a5 5 0 0 0 0 10h4"/><path d="M8 21l-5-5 5-5"/><path d="M3 16h12a5 5 0 0 0 0-10H11"/></svg>
+                </button>
+              </div>
+              <button type="button" class="pc-product-cart-btn" data-add-cart data-price="54.20">Add to Cart</button>
+            </div>
+            <div class="pc-product-body">
+              <div class="pc-product-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(67)</span></div>
+              <h3 class="pc-product-title"><a href="shop.html">Kraft Deli Boxes 750ml (200)</a></h3>
+              <div class="pc-product-price">
+                <span class="pc-price-current">&pound;54.20</span>
+                <span class="pc-price-was">&pound;63.75</span>
+                <span class="pc-price-vat">excl. VAT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pc-product-card">
+            <div class="pc-product-media">
+              <img src="images/Highgene.png" alt="Highgene multi-surface cleaner" loading="lazy">
+              <div class="pc-product-actions">
+                <button type="button" class="pc-product-action" data-wishlist aria-label="Add to wishlist">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Quick view">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+                <button type="button" class="pc-product-action" aria-label="Compare">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l5 5-5 5"/><path d="M21 8H9a5 5 0 0 0 0 10h4"/><path d="M8 21l-5-5 5-5"/><path d="M3 16h12a5 5 0 0 0 0-10H11"/></svg>
+                </button>
+              </div>
+              <button type="button" class="pc-product-cart-btn" data-add-cart data-price="24.99">Add to Cart</button>
+            </div>
+            <div class="pc-product-body">
+              <div class="pc-product-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733; <span>(19)</span></div>
+              <h3 class="pc-product-title"><a href="shop.html">Highgene Multi-Surface Cleaner 5L</a></h3>
+              <div class="pc-product-price">
+                <span class="pc-price-current">&pound;24.99</span>
+                <span class="pc-price-vat">excl. VAT</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Shop by Industry -->
+    <section class="pc-section pc-section--alt" aria-labelledby="industry-heading">
+      <div class="pc-container">
+        <header class="pc-section-head">
+          <span class="pc-kicker">Your sector</span>
+          <h2 class="pc-section-title" id="industry-heading">Shop by Industry</h2>
+          <p class="pc-section-desc">Packaging solutions tailored to how you serve — whether you run a single-site caf&eacute; or a multi-site catering operation.</p>
+        </header>
+        <div class="pc-industry-grid">
+          <a href="shop.html#cat-coffee-cups" class="pc-industry-card">
+            <div class="pc-industry-media"><img src="images/category-coffee.jpg" alt="Caf&eacute; coffee cups and lids" loading="lazy"></div>
+            <div class="pc-industry-body"><h3>Caf&eacute;</h3><p>Espresso cups, smoothie tumblers, stirrers &amp; syrups</p></div>
+          </a>
+          <a href="shop.html#cat-deli-boxes" class="pc-industry-card">
+            <div class="pc-industry-media"><img src="images/category-deli.jpg" alt="Takeaway food packaging" loading="lazy"></div>
+            <div class="pc-industry-body"><h3>Takeaway</h3><p>Leak-proof boxes, bags, and meal-deal packaging</p></div>
+          </a>
+          <a href="shop.html#cat-catering" class="pc-industry-card">
+            <div class="pc-industry-media"><img src="images/hero-packaging.jpg" alt="Catering bulk packaging" loading="lazy"></div>
+            <div class="pc-industry-body"><h3>Catering</h3><p>Platters, foil trays, bulk hygiene &amp; disposables</p></div>
+          </a>
+          <a href="shop.html#cat-desserts" class="pc-industry-card">
+            <div class="pc-industry-media"><img src="images/category-desserts.jpg" alt="Bakery and dessert packaging" loading="lazy"></div>
+            <div class="pc-industry-body"><h3>Bakery</h3><p>Cake boxes, greaseproof, dessert pots &amp; lids</p></div>
+          </a>
+          <a href="shop.html#cat-paper-carrier" class="pc-industry-card">
+            <div class="pc-industry-media"><img src="images/Branded-bags-1.png" alt="Retail carrier bags" loading="lazy"></div>
+            <div class="pc-industry-body"><h3>Retail</h3><p>Branded carriers, gift bags &amp; counter displays</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Custom Packaging -->
+    <section class="pc-section pc-section--alt" id="custom-packaging" aria-labelledby="custom-heading">
+      <div class="pc-container pc-custom-showcase">
+        <div class="pc-custom-gallery">
+          <img src="images/custom-packaging-cups.png" alt="Custom printed coffee cups with brand logo" loading="lazy">
+          <img src="images/customized-paking.png" alt="Bespoke food packaging design" loading="lazy">
+          <img src="images/Website-Branding-home-page.png" alt="Branded packaging showcase" loading="lazy">
+        </div>
+        <div class="pc-custom-copy">
+          <span class="pc-kicker">Make it yours</span>
+          <h2 id="custom-heading">Custom Packaging That Works as Hard as You Do</h2>
+          <p>Stand out on the shelf and at the counter with professionally printed cups, bags, and boxes. Our Glasgow team handles artwork checks, print proofs, and production — so you get on-brand packaging without the hassle.</p>
+          <ul class="pc-custom-list">
+            <li>Full-colour print on cups, carriers, deli boxes, and greaseproof</li>
+            <li>Flexible MOQs starting from 1,000 units on selected lines</li>
+            <li>Free artwork review and digital proof before production</li>
+            <li>Matched to your Pantone or existing brand guidelines</li>
+          </ul>
+          <a href="shop.html#custom" class="pc-btn pc-btn--primary">Request a Custom Quote &#8594;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="pc-section" aria-labelledby="story-heading">
+      <div class="pc-container pc-story">
+        <div class="pc-story-media">
+          <img src="images/Highgene.png" alt="Twisted Hygiene and Packaging warehouse, Glasgow" loading="lazy">
+        </div>
+        <div class="pc-story-copy">
+          <span class="pc-kicker">Our story</span>
+          <h2 id="story-heading">Glasgow&rsquo;s Trusted Packaging Partner</h2>
+          <p>Twisted Hygiene &amp; Packaging started with a simple goal: give Scottish hospitality businesses access to reliable, fairly priced packaging without the long lead times. From our base on Woodhead Road in Glasgow, we stock thousands of lines — cups, boxes, bags, hygiene, and catering essentials — ready for next-day dispatch across the UK.</p>
+          <p>We work with independent caf&eacute;s, national chains, event caterers, and everything in between. When you call, you speak to people who know the products — not a call centre. That is why customers come back year after year.</p>
+          <div class="pc-story-stats">
+            <div class="pc-stat"><strong>15+</strong><span>Years serving hospitality</span></div>
+            <div class="pc-stat"><strong>3,000+</strong><span>Products in stock</span></div>
+            <div class="pc-stat"><strong>340+</strong><span>Five-star reviews</span></div>
+          </div>
+          <div class="pc-brand-logos" aria-label="Partner brands we stock">
+            <img src="images/brand-11.webp" alt="Lavazza" width="80" height="40" loading="lazy">
+            <img src="images/brand-22.webp" alt="MONIN" width="80" height="40" loading="lazy">
+            <img src="images/brand-33.webp" alt="Framptons" width="80" height="40" loading="lazy">
+            <img src="images/brand-44.webp" alt="Highgene" width="80" height="40" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="pc-section pc-section--alt" aria-labelledby="reviews-heading">
+      <div class="pc-container">
+        <header class="pc-section-head">
+          <span class="pc-kicker">Trusted by businesses</span>
+          <h2 class="pc-section-title" id="reviews-heading">What Our Customers Say</h2>
+        </header>
+        <div class="pc-testimonials-grid">
+          <article class="pc-testimonial">
+            <header class="pc-testimonial-header">
+              <img class="pc-testimonial-avatar" src="https://lh3.googleusercontent.com/a/ACg8ocIU6avo0--ef8vCIednL_xxyPP-2lWXek9d0L8p2pkHlSUj5A=w40-h40-c-rp-mo-br100" alt="H Ali" width="44" height="44" loading="lazy">
+              <div>
+                <div class="pc-testimonial-name">H Ali</div>
+                <div class="pc-testimonial-date">Reviewed 3 months ago</div>
+              </div>
+            </header>
+            <div class="pc-testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="pc-testimonial-title">Outstanding service and support</h3>
+            <p class="pc-testimonial-text">Would like to thank Aqib for his amazing service to our business — readily available and goes beyond what we need. Has looked after our account for a year; any issues dealt with within hours.</p>
+          </article>
+          <article class="pc-testimonial">
+            <header class="pc-testimonial-header">
+              <img class="pc-testimonial-avatar" src="https://lh3.googleusercontent.com/a-/ALV-UjUfBp4ns_8bBX5J5eRedtsjzSyAKtIQiRQBM-CRp9tFLrpDKxM=w40-h40-c-rp-mo-br100" alt="Sharon Coulson" width="44" height="44" loading="lazy">
+              <div>
+                <div class="pc-testimonial-name">Sharon Coulson</div>
+                <div class="pc-testimonial-date">Reviewed 11 months ago</div>
+              </div>
+            </header>
+            <div class="pc-testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="pc-testimonial-title">Excellent customer service</h3>
+            <p class="pc-testimonial-text">Really excellent customer service — kept me updated when a product was on back order. Great products when they arrived; really happy with the quality and delivery speed.</p>
+          </article>
+          <article class="pc-testimonial">
+            <header class="pc-testimonial-header">
+              <img class="pc-testimonial-avatar" src="https://lh3.googleusercontent.com/a-/ALV-UjVX3PSAQzNacCNl7N66WLiFjCy5E-7Sf0vMvw5Jw1Vu0K5qUU4=w40-h40-c-rp-mo-br100" alt="Nanah Asamoah" width="44" height="44" loading="lazy">
+              <div>
+                <div class="pc-testimonial-name">Nanah Asamoah</div>
+                <div class="pc-testimonial-date">Reviewed 1 year ago</div>
+              </div>
+            </header>
+            <div class="pc-testimonial-stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <h3 class="pc-testimonial-title">Trusted supplier for our business</h3>
+            <p class="pc-testimonial-text">Great customer service, great products and great prices. I&rsquo;ve worked with them for a year solely online and communication has been excellent. Everything delivered as expected — a business you can trust.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Blog -->
+    <section class="pc-section pc-section--alt" aria-labelledby="blog-heading">
+      <div class="pc-container">
+        <header class="pc-section-head">
+          <span class="pc-kicker">Insights</span>
+          <h2 class="pc-section-title" id="blog-heading">From the Twisted Blog</h2>
+          <p class="pc-section-desc">Practical guides for hospitality owners — packaging trends, compliance updates, and cost-saving tips.</p>
+        </header>
+        <div class="pc-blog-grid">
+          <article class="pc-blog-card">
+            <a href="#" class="pc-blog-media">
+              <img src="images/category-smoothie.jpg" alt="Smoothie cups and sustainable drinkware" loading="lazy">
+            </a>
+            <div class="pc-blog-body">
+              <p class="pc-blog-meta">Packaging Guides &middot; 5 min read</p>
+              <h3><a href="#">How to Choose the Right Coffee Cup for Your Caf&eacute;</a></h3>
+              <p>Single-wall vs double-wall, compostable linings, and lid compatibility — everything you need before placing your first bulk order.</p>
+              <a href="#" class="pc-blog-link">Read article &#8594;</a>
+            </div>
+          </article>
+          <article class="pc-blog-card">
+            <a href="#" class="pc-blog-media">
+              <img src="images/Branded-bags-1.png" alt="Custom branded carrier bags" loading="lazy">
+            </a>
+            <div class="pc-blog-body">
+              <p class="pc-blog-meta">Branding &middot; 4 min read</p>
+              <h3><a href="#">Custom Packaging MOQs: What to Expect in 2026</a></h3>
+              <p>From artwork setup to delivery timelines — a straightforward breakdown of minimum order quantities across cups, bags, and boxes.</p>
+              <a href="#" class="pc-blog-link">Read article &#8594;</a>
+            </div>
+          </article>
+          <article class="pc-blog-card">
+            <a href="#" class="pc-blog-media">
+              <img src="images/category-icecream.jpg" alt="Ice cream tubs and dessert packaging" loading="lazy">
+            </a>
+            <div class="pc-blog-body">
+              <p class="pc-blog-meta">Sustainability &middot; 6 min read</p>
+              <h3><a href="#">Switching to Compostable Takeaway Packaging</a></h3>
+              <p>What &ldquo;compostable&rdquo; really means in Scotland, which materials perform best, and how to communicate changes to your customers.</p>
+              <a href="#" class="pc-blog-link">Read article &#8594;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="pc-section" aria-labelledby="faq-heading">
+      <div class="pc-container">
+        <header class="pc-section-head">
+          <span class="pc-kicker">Questions answered</span>
+          <h2 class="pc-section-title" id="faq-heading">Frequently Asked Questions</h2>
+        </header>
+        <div class="pc-faq">
+          <div class="pc-faq-item">
+            <button class="pc-faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-trigger-1">
+              What are your delivery times and costs?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="pc-faq-panel" id="faq-panel-1" role="region" aria-labelledby="faq-trigger-1">
+              <div class="pc-faq-panel-inner">
+                <p>Orders placed before 3pm Monday to Friday dispatch the same day for next-working-day delivery on mainland UK. Delivery is free on orders over &pound;100 excl. VAT. Standard carriage rates apply below that threshold and are shown at checkout before you pay.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pc-faq-item">
+            <button class="pc-faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-trigger-2">
+              How does custom packaging work?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="pc-faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-trigger-2">
+              <div class="pc-faq-panel-inner">
+                <p>Send us your logo or brand guidelines and tell us which product you need — cups, bags, boxes, or greaseproof. We prepare a digital proof for approval, confirm MOQ and lead time, then schedule production. Most custom jobs complete within 3&ndash;4 weeks depending on print method and volume.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pc-faq-item">
+            <button class="pc-faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-trigger-3">
+              Are your prices inclusive or exclusive of VAT?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="pc-faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-trigger-3">
+              <div class="pc-faq-panel-inner">
+                <p>All trade prices on our website are shown excluding VAT. VAT at the prevailing UK rate is added at checkout. If you are VAT registered, enter your VAT number in your account to receive VAT invoices suitable for your records.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pc-faq-item">
+            <button class="pc-faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-trigger-4">
+              What are minimum order quantities (MOQ)?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="pc-faq-panel" id="faq-panel-4" role="region" aria-labelledby="faq-trigger-4">
+              <div class="pc-faq-panel-inner">
+                <p>Stock lines can be ordered in case quantities as listed on each product page — often from a single case. Custom printed packaging typically starts from 1,000 units on cups and 500&ndash;1,000 on bags, depending on size and print colours. Contact us for exact MOQs on your project.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pc-faq-item">
+            <button class="pc-faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-5" id="faq-trigger-5">
+              What is your returns policy?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="pc-faq-panel" id="faq-panel-5" role="region" aria-labelledby="faq-trigger-5">
+              <div class="pc-faq-panel-inner">
+                <p>If goods arrive damaged or incorrect, contact us within 48 hours with photos and your order number — we will arrange replacement or credit promptly. Custom-printed items cannot be returned unless faulty. Unused standard stock in original packaging may be returned within 14 days subject to a restocking fee.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Newsletter -->
+  <section class="pc-newsletter" aria-labelledby="newsletter-heading">
+    <div class="pc-container pc-newsletter-inner">
+      <div class="pc-newsletter-copy">
+        <h2 id="newsletter-heading">Stay ahead on offers &amp; new products</h2>
+        <p>Trade-only updates — no spam. Unsubscribe anytime.</p>
+      </div>
+      <form class="pc-newsletter-form" id="pcNewsletterForm" action="#" method="post">
+        <label for="pcNewsletterEmail" class="visually-hidden">Email address</label>
+        <input id="pcNewsletterEmail" type="email" name="email" placeholder="Your business email" required autocomplete="email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="pc-footer">
+    <div class="pc-container">
+      <div class="pc-footer-grid">
+        <div class="pc-footer-col">
+          <a href="concept2.html" class="pc-footer-logo">
+            <img src="images/logo.png" alt="Twisted Hygiene &amp; Packaging">
+          </a>
+          <p class="pc-footer-about">Twisted Hygiene &amp; Packaging is a leading supplier of premium eco-friendly packaging and hygiene products across Scotland and the UK — cups, boxes, bags, and custom branded solutions from our Glasgow warehouse.</p>
+        </div>
+        <div class="pc-footer-col">
+          <h3 class="pc-footer-heading">Information</h3>
+          <ul class="pc-footer-links">
+            <li><a href="#story-heading">About Us</a></li>
+            <li><a href="#custom-packaging">Custom Packaging</a></li>
+            <li><a href="#faq-heading">FAQ</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#blog-heading">Blog</a></li>
+          </ul>
+        </div>
+        <div class="pc-footer-col">
+          <h3 class="pc-footer-heading">My Account</h3>
+          <ul class="pc-footer-links">
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order History</a></li>
+            <li><a href="#">Wishlist</a></li>
+            <li><a href="shop.html">Shop All</a></li>
+          </ul>
+        </div>
+        <div class="pc-footer-col">
+          <h3 class="pc-footer-heading">Get in Touch</h3>
+          <div class="pc-footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>149 Woodhead Road, Glasgow, G53 7NN</span>
+          </div>
+          <div class="pc-footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <a href="tel:+441414283149">0141 428 3149</a><br>
+              <span>Mon&ndash;Fri: 9am&ndash;5pm</span>
+            </div>
+          </div>
+          <div class="pc-footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:info@twistedhygiene-packaging.co.uk">info@twistedhygiene-packaging.co.uk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc-footer-mid">
+        <div class="pc-footer-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-13h4v2"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        </div>
+        <div class="pc-payments">
+          <img src="images/payment1.png" alt="Visa" width="60" height="36" loading="lazy">
+          <img src="images/payment2.png" alt="Mastercard" width="60" height="36" loading="lazy">
+          <img src="images/payment3.png" alt="PayPal" width="60" height="36" loading="lazy">
+          <img src="images/payment4.png" alt="American Express" width="60" height="36" loading="lazy">
+        </div>
+      </div>
+
+      <div class="pc-footer-legal">
+        <p>&copy; 2026 Twisted Hygiene &amp; Packaging. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky cart demo -->
+  <aside class="pc-sticky-cart" id="pcStickyCart" aria-live="polite" aria-label="Cart summary">
+    <div class="pc-sticky-cart-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h2l2.2 12.3a2 2 0 0 0 2 1.7h9.6a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+    </div>
+    <div class="pc-sticky-cart-text">
+      <strong data-sticky-count>0 items</strong>
+      <span data-sticky-total>&pound;0.00</span>
+    </div>
+  </aside>
+
+  <!-- Concept switcher -->
+  <nav class="pc-concept-bar" aria-label="Design concept switcher">
+    <div class="pc-concept-bar-inner">
+      <span class="pc-concept-bar-label">Concepts</span>
+      <a href="concept1.html" class="pc-concept-link">1</a>
+      <a href="concept2.html" class="pc-concept-link is-active" aria-current="page">2 — Charcoal &amp; Cyan</a>
+      <a href="concept3.html" class="pc-concept-link">3</a>
+      <a href="concept4.html" class="pc-concept-link">4</a>
+      <a href="concept5.html" class="pc-concept-link">5</a>
+      <a href="index.html" class="pc-concept-link">Original</a>
+    </div>
+  </nav>
+
+  <script src="premium-concepts.js"></script>
+</body>
+</html>

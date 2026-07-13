@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twisted Hygiene & Packaging | New Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="new-design.css">
+</head>
+<body class="nd-page">
+
+  <!-- TOP BAR -->
+  <div class="nd-topbar">
+    <div class="nd-container nd-topbar-inner">
+      <div>&#128666; Free delivery on orders over <strong>£100</strong></div>
+      <div class="nd-topbar-rating">
+        <strong>Excellent</strong>
+        <span class="nd-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        <span>4.9/5 based on 340 reviews</span>
+      </div>
+      <div>Next dispatch in <strong><span id="ndHours">21</span>h <span id="ndMinutes">13</span>m</strong></div>
+      <div class="nd-topbar-help">We're here to help · <a href="tel:+441414283149">0141 428 3149</a></div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="nd-header">
+    <div class="nd-container">
+      <div class="nd-header-main">
+        <a href="new-design.html" class="nd-logo" aria-label="Twisted Hygiene & Packaging">
+          <img src="images/logo.png" alt="Twisted" class="nd-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <span class="nd-logo-mark" style="display:none">T</span>
+          <span class="nd-logo-text" style="display:none">
+            <strong>Twisted</strong>
+            <span>Hygiene &amp; Packaging</span>
+          </span>
+        </a>
+
+        <form class="nd-search" action="shop.html" role="search">
+          <select aria-label="Search category">
+            <option>All Categories</option>
+            <option>Cups &amp; Drinkware</option>
+            <option>Food Boxes &amp; Trays</option>
+            <option>Bags &amp; Carriers</option>
+            <option>Custom Packaging</option>
+          </select>
+          <input type="search" placeholder="Search products…">
+          <button type="submit" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          </button>
+        </form>
+
+        <div class="nd-actions">
+          <a href="#" class="nd-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg>
+            Account
+          </a>
+          <a href="#" class="nd-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+            Wishlist
+          </a>
+          <a href="#" class="nd-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3l5 5-5 5"/><path d="M21 8H9a5 5 0 0 0 0 10h4"/><path d="M8 21l-5-5 5-5"/><path d="M3 16h12a5 5 0 0 0 0-10H11"/></svg>
+            Compare
+          </a>
+          <a href="#" class="nd-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h2l2.2 12.3a2 2 0 0 0 2 1.7h9.6a2 2 0 0 0 2-1.6L22 7H6"/></svg>
+            Cart
+            <span class="nd-badge">0</span>
+          </a>
+        </div>
+
+        <button class="nd-menu-toggle" type="button" id="ndMenuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="nd-nav" id="ndNav">
+        <a href="shop.html">New In</a>
+        <a href="shop.html">Cups &amp; Drinkware</a>
+        <a href="shop.html">Food Boxes &amp; Trays</a>
+        <a href="shop.html">Bags &amp; Carriers</a>
+        <a href="shop.html">Tableware &amp; Wrap</a>
+        <a href="shop.html">Custom Packaging</a>
+        <a href="shop.html">Clearance</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="nd-hero">
+      <div class="nd-container">
+        <div class="nd-hero-panel">
+          <div class="nd-hero-copy">
+            <span class="nd-hero-kicker">Showcase Your Brand</span>
+            <h1 class="nd-hero-title">Packaging that puts your brand <em>front and centre</em></h1>
+            <p class="nd-hero-desc">Premium, eco-friendly food packaging and hygiene supplies — custom branded or ready to ship, trusted by thousands of hospitality businesses.</p>
+            <div class="nd-hero-ctas">
+              <a href="shop.html" class="nd-btn nd-btn-green">Shop Now &#8594;</a>
+              <a href="#custom" class="nd-btn nd-btn-ghost">Request Quote</a>
+            </div>
+          </div>
+          <div class="nd-hero-visual" aria-hidden="true">
+            <div class="nd-hero-pill nd-stripes"></div>
+            <div class="nd-hero-pill nd-stripes"></div>
+            <div class="nd-hero-pill nd-stripes-light"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="nd-trust">
+      <div class="nd-container">
+        <div class="nd-trust-grid">
+          <div class="nd-trust-item">
+            <div class="nd-trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 3v4h-7"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+            </div>
+            <div>
+              <h4>Next Day Delivery</h4>
+              <p>Free on orders over £100</p>
+            </div>
+          </div>
+          <div class="nd-trust-item">
+            <div class="nd-trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+            </div>
+            <div>
+              <h4>Value For Money</h4>
+              <p>High quality, low prices</p>
+            </div>
+          </div>
+          <div class="nd-trust-item">
+            <div class="nd-trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+            </div>
+            <div>
+              <h4>Secure Payment</h4>
+              <p>100% secure checkout</p>
+            </div>
+          </div>
+          <div class="nd-trust-item">
+            <div class="nd-trust-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a8.5 8.5 0 0 1-8.5 8.5H5l2-3"/><path d="M3 12a8.5 8.5 0 0 1 8.5-8.5H19l-2 3"/></svg>
+            </div>
+            <div>
+              <h4>Live Support</h4>
+              <p>Mon–Fri 9am–5pm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="nd-section" id="categories">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <span class="nd-eyebrow">What Are You Looking For</span>
+          <h2 class="nd-section-title">Shop by Category</h2>
+        </div>
+        <div class="nd-cat-grid">
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-blue nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Coffee Cups</h3><p>86 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-green nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Food Containers</h3><p>142 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-orange nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Paper Bags</h3><p>64 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-navy nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Takeaway Boxes</h3><p>98 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-blue nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Pizza Boxes</h3><p>37 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-green nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Dessert Packaging</h3><p>52 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-gray nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Cleaning Supplies</h3><p>120 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-orange nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Custom Packaging</h3><p>29 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-green nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Eco Products</h3><p>110 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-blue nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Cutlery</h3><p>45 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-navy nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Napkins</h3><p>31 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+          <a href="shop.html" class="nd-cat-card">
+            <div class="nd-cat-media nd-tone-orange nd-stripes-light"></div>
+            <div class="nd-cat-body"><div><h3>Wraps &amp; Film</h3><p>24 products</p></div><span class="nd-cat-arrow">&#8594;</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="nd-section" style="padding-top: 0;">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <span class="nd-eyebrow">Hand Picked</span>
+          <h2 class="nd-section-title">Featured Products</h2>
+        </div>
+        <div class="nd-products-grid">
+          <article class="nd-product-card">
+            <div class="nd-product-media">
+              <span class="nd-sale">-15%</span>
+              <button class="nd-quick" type="button" aria-label="Quick view">&#128065;</button>
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/8oz-edenware-dw.jpg" alt="Kraft Coffee Cups 12oz" loading="lazy">
+            </div>
+            <div class="nd-product-body">
+              <p class="nd-product-cat">Cups &amp; Drinkware</p>
+              <h3 class="nd-product-title">Kraft Coffee Cups 12oz – Pack of 50</h3>
+              <p class="nd-product-rating"><span class="nd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>(128)</p>
+              <div class="nd-product-meta"><span class="nd-price">£12.99</span><span class="nd-stock">In Stock</span></div>
+              <a href="shop.html" class="nd-btn nd-btn-navy">Add to Cart</a>
+            </div>
+          </article>
+          <article class="nd-product-card">
+            <div class="nd-product-media">
+              <button class="nd-quick" type="button" aria-label="Quick view">&#128065;</button>
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2023/12/med-food-2-go-box.jpg" alt="Food to Go Box" loading="lazy">
+            </div>
+            <div class="nd-product-body">
+              <p class="nd-product-cat">Food Boxes</p>
+              <h3 class="nd-product-title">Medium Food-to-Go Box with Window</h3>
+              <p class="nd-product-rating"><span class="nd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>(86)</p>
+              <div class="nd-product-meta"><span class="nd-price">£24.50</span><span class="nd-stock">In Stock</span></div>
+              <a href="shop.html" class="nd-btn nd-btn-navy">Add to Cart</a>
+            </div>
+          </article>
+          <article class="nd-product-card">
+            <div class="nd-product-media">
+              <span class="nd-sale">-10%</span>
+              <button class="nd-quick" type="button" aria-label="Quick view">&#128065;</button>
+              <img src="https://twistedhygiene-packaging.co.uk/wp-content/uploads/2024/01/4307-1-lrg.jpg" alt="Paper Straws" loading="lazy">
+            </div>
+            <div class="nd-product-body">
+              <p class="nd-product-cat">Eco Range</p>
+              <h3 class="nd-product-title">Green Striped Paper Straws – 250 Pack</h3>
+              <p class="nd-product-rating"><span class="nd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>(64)</p>
+              <div class="nd-product-meta"><span class="nd-price">£6.99</span><span class="nd-stock low">Low Stock</span></div>
+              <a href="shop.html" class="nd-btn nd-btn-navy">Add to Cart</a>
+            </div>
+          </article>
+          <article class="nd-product-card">
+            <div class="nd-product-media">
+              <button class="nd-quick" type="button" aria-label="Quick view">&#128065;</button>
+              <img src="images/Branded-bags-1.png" alt="Paper Carrier Bags" loading="lazy">
+            </div>
+            <div class="nd-product-body">
+              <p class="nd-product-cat">Bags &amp; Carriers</p>
+              <h3 class="nd-product-title">Kraft Paper Carrier Bags – Brown</h3>
+              <p class="nd-product-rating"><span class="nd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>(92)</p>
+              <div class="nd-product-meta"><span class="nd-price">£18.75</span><span class="nd-stock">In Stock</span></div>
+              <a href="shop.html" class="nd-btn nd-btn-navy">Add to Cart</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CUSTOM CTA -->
+    <section class="nd-section" id="custom" style="padding-top: 0;">
+      <div class="nd-container">
+        <div class="nd-custom-cta">
+          <div>
+            <span class="nd-eyebrow">Get Your Packaging</span>
+            <h2>Customised to your brand</h2>
+            <p>From cups to carrier bags — put your logo on premium eco-friendly packaging with low minimums and fast turnaround.</p>
+            <div class="nd-custom-ctas">
+              <a href="#" class="nd-btn nd-btn-white">Get Custom Quote</a>
+              <a href="#" class="nd-btn nd-btn-outline-white">Learn More</a>
+            </div>
+          </div>
+          <div class="nd-custom-visual" aria-hidden="true">
+            <div class="nd-hero-pill nd-stripes" style="background:#f59e0b"></div>
+            <div class="nd-hero-pill nd-stripes" style="background:#fff"></div>
+            <div class="nd-hero-pill nd-stripes-light" style="background:#1d4ed8"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="nd-section" style="padding-top: 24px;">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <span class="nd-eyebrow">The Twisted Difference</span>
+          <h2 class="nd-section-title">Why Choose Us</h2>
+        </div>
+        <div class="nd-why-grid">
+          <article class="nd-why-card">
+            <div class="nd-why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Trusted Quality</h3>
+            <p>Premium packaging and hygiene products used by hospitality businesses across the UK.</p>
+          </article>
+          <article class="nd-why-card">
+            <div class="nd-why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.2 6.6H21l-5.4 4 2.1 6.5L12 15.6 6.3 19l2.1-6.5L3 8.6h6.8z"/></svg>
+            </div>
+            <h3>Eco-Friendly Range</h3>
+            <p>Compostable, recyclable and plastic-free options without compromising on strength.</p>
+          </article>
+          <article class="nd-why-card">
+            <div class="nd-why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 3v4h-7"/><circle cx="7" cy="19" r="2"/><circle cx="17" cy="19" r="2"/></svg>
+            </div>
+            <h3>Fast UK Delivery</h3>
+            <p>Next-day dispatch options and free delivery on qualifying orders over £100.</p>
+          </article>
+          <article class="nd-why-card">
+            <div class="nd-why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+            </div>
+            <h3>Custom Branding</h3>
+            <p>Low minimums and quick turnaround so your logo looks sharp on every order.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEST SELLING -->
+    <section class="nd-section" style="padding-top: 24px;">
+      <div class="nd-container">
+        <div class="nd-row-head">
+          <h2 class="nd-section-title">Best Selling Products</h2>
+          <div class="nd-carousel-nav">
+            <button type="button" id="ndBestPrev" aria-label="Previous">&#8592;</button>
+            <button type="button" id="ndBestNext" aria-label="Next">&#8594;</button>
+          </div>
+        </div>
+        <div class="nd-best-track" id="ndBestTrack">
+          <article class="nd-best-card">
+            <div class="nd-best-media nd-tone-blue nd-stripes-light"></div>
+            <div class="nd-best-body"><h3>Double Wall Coffee Cups</h3><p class="nd-price">£14.99</p></div>
+          </article>
+          <article class="nd-best-card">
+            <div class="nd-best-media nd-tone-green nd-stripes-light"></div>
+            <div class="nd-best-body"><h3>Green Striped Paper Straws</h3><p class="nd-price">£6.99</p></div>
+          </article>
+          <article class="nd-best-card">
+            <div class="nd-best-media nd-tone-orange nd-stripes-light"></div>
+            <div class="nd-best-body"><h3>Food-to-Go Box Medium</h3><p class="nd-price">£24.50</p></div>
+          </article>
+          <article class="nd-best-card">
+            <div class="nd-best-media nd-tone-gray nd-stripes-light"></div>
+            <div class="nd-best-body"><h3>Multi-Surface Cleaner 5L</h3><p class="nd-price">£11.25</p></div>
+          </article>
+          <article class="nd-best-card">
+            <div class="nd-best-media nd-tone-navy nd-stripes-light"></div>
+            <div class="nd-best-body"><h3>Kraft Deli Boxes</h3><p class="nd-price">£19.80</p></div>
+          </article>
+          <article class="nd-best-card">
+            <div class="nd-best-media nd-tone-green nd-stripes-light"></div>
+            <div class="nd-best-body"><h3>Compostable Bowls</h3><p class="nd-price">£16.40</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECENT + TRENDING -->
+    <section class="nd-section" style="padding-top: 12px;">
+      <div class="nd-container">
+        <div class="nd-split">
+          <div class="nd-list-card">
+            <h3>Recently Viewed</h3>
+            <div class="nd-list-item">
+              <div class="nd-list-thumb nd-tone-blue nd-stripes-light"></div>
+              <div><h4>Bagasse Bowls</h4><p>£15.99</p></div>
+            </div>
+            <div class="nd-list-item">
+              <div class="nd-list-thumb nd-tone-green nd-stripes-light"></div>
+              <div><h4>Foil Containers</h4><p>£9.50</p></div>
+            </div>
+            <div class="nd-list-item">
+              <div class="nd-list-thumb nd-tone-orange nd-stripes-light"></div>
+              <div><h4>Kraft Napkins</h4><p>£7.25</p></div>
+            </div>
+          </div>
+          <div class="nd-list-card">
+            <h3>Trending Now</h3>
+            <div class="nd-list-item">
+              <div class="nd-list-thumb nd-tone-blue nd-stripes-light"></div>
+              <div><h4>Custom Branded Cups</h4><p>£22.00</p></div>
+              <span class="nd-hot">&#128293; Hot</span>
+            </div>
+            <div class="nd-list-item">
+              <div class="nd-list-thumb nd-tone-green nd-stripes-light"></div>
+              <div><h4>Compostable Bowls</h4><p>£16.40</p></div>
+              <span class="nd-hot">&#128293; Hot</span>
+            </div>
+            <div class="nd-list-item">
+              <div class="nd-list-thumb nd-tone-orange nd-stripes-light"></div>
+              <div><h4>Eco Carrier Bags</h4><p>£13.75</p></div>
+              <span class="nd-hot">&#128293; Hot</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRY -->
+    <section class="nd-section" style="padding-top: 24px;">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <span class="nd-eyebrow">Tailored Solutions</span>
+          <h2 class="nd-section-title">Shop by Industry</h2>
+        </div>
+        <div class="nd-industry-grid">
+          <a href="shop.html" class="nd-industry-card nd-ind-1"><span>Restaurants</span></a>
+          <a href="shop.html" class="nd-industry-card nd-ind-2"><span>Hotels</span></a>
+          <a href="shop.html" class="nd-industry-card nd-ind-3"><span>Cafes</span></a>
+          <a href="shop.html" class="nd-industry-card nd-ind-4"><span>Schools</span></a>
+          <a href="shop.html" class="nd-industry-card nd-ind-5"><span>Hospitals</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ECO -->
+    <section class="nd-section" style="padding-top: 12px;">
+      <div class="nd-container">
+        <div class="nd-eco">
+          <div>
+            <span class="nd-eyebrow">&#127793; Sustainable Choice</span>
+            <h2 class="nd-section-title">Eco-Friendly Collection</h2>
+            <p>Compostable, recyclable and plastic-free packaging that's kind to the planet without compromising on quality.</p>
+            <a href="shop.html" class="nd-btn nd-btn-green">Explore Eco Range</a>
+          </div>
+          <div class="nd-eco-tiles" aria-hidden="true">
+            <div class="nd-eco-tile nd-tone-green nd-stripes-light"></div>
+            <div class="nd-eco-tile nd-tone-blue nd-stripes-light"></div>
+            <div class="nd-eco-tile nd-tone-orange nd-stripes-light"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="nd-section" style="padding-top: 24px;">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <h2 class="nd-section-title">Featured Brands</h2>
+        </div>
+        <div class="nd-brands-grid">
+          <div class="nd-brand"><img src="images/brand-11.webp" alt="Brand" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Vegware'}))"></div>
+          <div class="nd-brand"><img src="images/brand-22.webp" alt="Brand" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Biopak'}))"></div>
+          <div class="nd-brand"><img src="images/brand-33.webp" alt="Brand" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Detpak'}))"></div>
+          <div class="nd-brand"><img src="images/brand-44.webp" alt="Brand" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'Packnwood'}))"></div>
+          <div class="nd-brand"><span>Lavazza</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="nd-section" style="padding-top: 12px;">
+      <div class="nd-container">
+        <a href="#" class="nd-video" aria-label="See how our packaging is made">
+          <span class="nd-play">&#9654;</span>
+          <span class="nd-video-caption">See how our packaging is made</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="nd-section">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <span class="nd-eyebrow">Customer Love</span>
+          <h2 class="nd-section-title">Customer Reviews</h2>
+        </div>
+        <div class="nd-reviews-grid">
+          <article class="nd-review">
+            <div class="nd-review-top">
+              <div class="nd-avatar" style="background:#0f487b">S</div>
+              <div>
+                <h4>Sarah M.</h4>
+                <p>Verified Google Review</p>
+              </div>
+            </div>
+            <div class="nd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="nd-review-text">"Brilliant quality cups and next-day delivery. Our café branding looks fantastic on the custom print run."</p>
+            <span class="nd-verified">&#10003; Verified Purchase</span>
+          </article>
+          <article class="nd-review">
+            <div class="nd-review-top">
+              <div class="nd-avatar" style="background:#16a34a">J</div>
+              <div>
+                <h4>James R.</h4>
+                <p>Verified Google Review</p>
+              </div>
+            </div>
+            <div class="nd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="nd-review-text">"Great prices on eco packaging. The team helped us switch from plastic with no fuss."</p>
+            <span class="nd-verified">&#10003; Verified Purchase</span>
+          </article>
+          <article class="nd-review">
+            <div class="nd-review-top">
+              <div class="nd-avatar" style="background:#f59e0b">A</div>
+              <div>
+                <h4>Aisha K.</h4>
+                <p>Verified Google Review</p>
+              </div>
+            </div>
+            <div class="nd-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="nd-review-text">"Reliable supplier for our hotel group. Hygiene and packaging always arrive on time."</p>
+            <span class="nd-verified">&#10003; Verified Purchase</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section class="nd-section" style="padding-top: 12px;">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <h2 class="nd-section-title">Latest From the Blog</h2>
+        </div>
+        <div class="nd-blog-grid">
+          <a href="#" class="nd-blog-card">
+            <div class="nd-blog-media nd-tone-green nd-stripes-light"></div>
+            <div class="nd-blog-body">
+              <span class="nd-eyebrow">Sustainability</span>
+              <h3>How to switch your takeaway packaging to compostable</h3>
+            </div>
+          </a>
+          <a href="#" class="nd-blog-card">
+            <div class="nd-blog-media nd-tone-blue nd-stripes-light"></div>
+            <div class="nd-blog-body">
+              <span class="nd-eyebrow">Guides</span>
+              <h3>Choosing the right coffee cup size for your café</h3>
+            </div>
+          </a>
+          <a href="#" class="nd-blog-card">
+            <div class="nd-blog-media nd-tone-orange nd-stripes-light"></div>
+            <div class="nd-blog-body">
+              <span class="nd-eyebrow">Branding</span>
+              <h3>Custom packaging ideas that make your brand stand out</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="nd-section" style="padding-top: 24px;">
+      <div class="nd-container">
+        <div class="nd-section-head" style="margin-bottom: 0;">
+          <h2 class="nd-section-title">@twistedpackaging</h2>
+        </div>
+        <p class="nd-section-sub">Follow us for behind-the-scenes and customer showcases</p>
+        <div class="nd-ig-grid">
+          <div class="nd-ig-tile nd-tone-blue"></div>
+          <div class="nd-ig-tile nd-tone-green"></div>
+          <div class="nd-ig-tile nd-tone-orange"></div>
+          <div class="nd-ig-tile nd-tone-navy"></div>
+          <div class="nd-ig-tile nd-tone-gray"></div>
+          <div class="nd-ig-tile nd-tone-green"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="nd-section">
+      <div class="nd-container">
+        <div class="nd-section-head">
+          <h2 class="nd-section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="nd-faq-list" id="ndFaq">
+          <div class="nd-faq-item open">
+            <button class="nd-faq-q" type="button">What is your minimum order for custom branded packaging? <span>+</span></button>
+            <div class="nd-faq-a">Minimums vary by product, but many custom cup and bag runs start from low quantities. Contact us for a tailored quote.</div>
+          </div>
+          <div class="nd-faq-item">
+            <button class="nd-faq-q" type="button">Do you deliver across the whole UK? <span>+</span></button>
+            <div class="nd-faq-a">Yes — we deliver nationwide from our Glasgow base, with next-day options available on many lines.</div>
+          </div>
+          <div class="nd-faq-item">
+            <button class="nd-faq-q" type="button">Are your products compostable and recyclable? <span>+</span></button>
+            <div class="nd-faq-a">We stock a wide eco range including compostable, recyclable and plastic-free packaging. Look for the Eco Collection.</div>
+          </div>
+          <div class="nd-faq-item">
+            <button class="nd-faq-q" type="button">Can I request a sample before ordering in bulk? <span>+</span></button>
+            <div class="nd-faq-a">Absolutely. Samples are available on selected products so you can check quality before placing a larger order.</div>
+          </div>
+          <div class="nd-faq-item">
+            <button class="nd-faq-q" type="button">What payment methods do you accept? <span>+</span></button>
+            <div class="nd-faq-a">We accept major cards, Apple Pay, Google Pay and other secure checkout options at payment.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="nd-section" style="padding-top: 12px;">
+      <div class="nd-container">
+        <div class="nd-newsletter">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get offers, new arrivals and delivery updates straight to your inbox.</p>
+          <form class="nd-newsletter-form" action="#" onsubmit="return false;">
+            <input type="email" placeholder="Enter your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="nd-footer">
+    <div class="nd-container">
+      <div class="nd-footer-grid">
+        <div class="nd-footer-brand">
+          <a href="new-design.html" class="nd-logo">
+            <span class="nd-logo-mark">T</span>
+            <span class="nd-logo-text">
+              <strong>Twisted</strong>
+              <span>Hygiene &amp; Packaging</span>
+            </span>
+          </a>
+          <p>Twisted Hygiene &amp; Packaging is a leading supplier of premium eco-friendly packaging and hygiene products across Scotland and the UK.</p>
+          <div class="nd-socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="X">X</a>
+            <a href="#" aria-label="Instagram">ig</a>
+          </div>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <div class="nd-footer-links">
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Terms &amp; Conditions</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">FAQ</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <div>
+          <h4>My Account</h4>
+          <div class="nd-footer-links">
+            <a href="#">My Account</a>
+            <a href="#">Order History</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Track Order</a>
+          </div>
+        </div>
+        <div>
+          <h4>Get in Touch</h4>
+          <div class="nd-contact-list">
+            <span>&#128205; 149 Woodhead Road, Glasgow, G53 7NN, UK</span>
+            <span>&#128222; <a href="tel:+441414283149">0141 428 3149</a></span>
+            <span>&#9993; <a href="mailto:info@twistedhygiene-packaging.co.uk">info@twistedhygiene-packaging.co.uk</a></span>
+          </div>
+        </div>
+      </div>
+      <div class="nd-footer-bottom">
+        <p>&copy; 2026 Twisted Hygiene &amp; Packaging. All rights reserved.</p>
+        <div class="nd-payments">
+          <span>VISA</span><span>MC</span><span>Pay</span><span>GPay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="nd-theme-bar">
+    <div class="nd-container nd-theme-inner">
+      <span>Theme options for client review:</span>
+      <div class="nd-theme-links">
+        <a href="index.html" class="nd-theme-chip">Original</a>
+        <a href="home1.html" class="nd-theme-chip">Home 1 – Teal</a>
+        <a href="home2.html" class="nd-theme-chip">Home 2 – Olive</a>
+        <a href="home3.html" class="nd-theme-chip">Home 3 – Fresh</a>
+        <a href="new-design.html" class="nd-theme-chip active">New Design</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      var toggle = document.getElementById('ndMenuToggle');
+      var nav = document.getElementById('ndNav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          var open = nav.classList.toggle('open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+
+      var track = document.getElementById('ndBestTrack');
+      var prev = document.getElementById('ndBestPrev');
+      var next = document.getElementById('ndBestNext');
+      if (track && prev && next) {
+        prev.addEventListener('click', function () { track.scrollBy({ left: -260, behavior: 'smooth' }); });
+        next.addEventListener('click', function () { track.scrollBy({ left: 260, behavior: 'smooth' }); });
+      }
+
+      document.querySelectorAll('#ndFaq .nd-faq-q').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var item = btn.parentElement;
+          var wasOpen = item.classList.contains('open');
+          document.querySelectorAll('#ndFaq .nd-faq-item').forEach(function (el) { el.classList.remove('open'); });
+          if (!wasOpen) item.classList.add('open');
+        });
+      });
+
+      var end = new Date();
+      end.setHours(end.getHours() + 21, end.getMinutes() + 13, 0, 0);
+      function tick() {
+        var diff = Math.max(0, end - Date.now());
+        var h = Math.floor(diff / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var hours = document.getElementById('ndHours');
+        var mins = document.getElementById('ndMinutes');
+        if (hours) hours.textContent = String(h);
+        if (mins) mins.textContent = String(m).padStart(2, '0');
+      }
+      tick();
+      setInterval(tick, 30000);
+    })();
+  </script>
+</body>
+</html>
